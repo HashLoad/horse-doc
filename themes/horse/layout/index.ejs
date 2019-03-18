@@ -1,0 +1,59 @@
+<div class="sidebar">
+  <div class="sidebar-inner-index">
+    <ul class="main-menu">
+      <%- partial('partials/main_menu', { context: 'sidebar' }) %>
+    </ul>
+  </div>
+</div>
+
+<div id="hero">
+  <div class="inner">
+    <div class="left">
+      <h2 class="horse">Horse</h2>
+      <h1>
+        Framework web <br> rápido, flexível e <br> minimalista para <br> <span class="red">Delphi</span>
+      </h1>
+    </div>
+    <div class="right">
+      <code class="hljs">
+        $ boss install github.com/HashLoad/horse
+      </code>
+      <p>
+        <a class="button white" href="<%- url_for("/guide/") %>">COMEÇAR</a>
+        <a class="button gray" href="https://github.com/HashLoad/horse" target="_blank">GITHUB</a>
+      </p>    
+    </div>
+  </div>
+</div>
+  
+<div id="highlights">
+  <div class="inner">
+      <div class="point">
+        <h2>Performático</h2>
+        <p>Abstrai uma camada para gerenciar aplicações web, deixando todos os recursos do Object Pascal a sua disposição.</p>
+      </div>
+
+    <div class="point">
+      <h2>Flexível</h2>
+      <p>Com diversos <i>middlewares</i> a sua disposição.</p>
+    </div>
+
+    <div class="point">
+        <h2>Minimalista</h2>
+        <p>Simples para começar, porém robusto para suas necessidades.</p>
+      </div>
+  </div>
+</div>
+
+<div id="footer">
+  <p>
+    <a class="social-icon" href="https://github.com/HashLoad/horse" target="_blank">
+      <%- partial('icons/github') %>
+    </a>
+    <a class="social-icon" href="https://www.youtube.com/channel/UCl4IApn7H4mZ1V-nmNijL6A" target="_blank">
+      <%- partial('icons/youtube') %>
+    </a>
+  </p>
+  <p>Distribuído sob a <a href="https://opensource.org/licenses/MIT" target="_blank">Licença MIT</a><br>
+  Copyright &copy; 2018-<%- new Date().getFullYear() %> HashLoad</p>
+</div>

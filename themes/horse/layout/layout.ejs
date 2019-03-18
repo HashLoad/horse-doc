@@ -1,0 +1,39 @@
+<% var isIndex = page.path === 'index.html' %>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%- page.title ? page.title + ' — ' : '' %>Horse</title>
+    <meta charset="utf-8">
+    <meta name="description" content="<%- theme.site_description %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="<%- page.title ? page.title + ' — ' : '' %>Horse">
+    <meta property="og:description" content="<%- theme.site_description %>">
+    <meta property="og:image" content="https://<%- theme.root_domain %>/<%- url_for("/images/logo.png") %>">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="<%- page.title ? page.title + ' — ' : '' %>Horse">
+    <meta name="twitter:description" content="<%- theme.site_description %>">
+    <meta name="twitter:image" content="https://<%- theme.root_domain %>/images/logo.png">
+
+    <link rel="icon" href="<%- url_for("/images/logo.png") %>" type="image/png">
+
+    <meta name="msapplication-TileColor" content="#4fc08d">
+    <meta name="theme-color" content="#4fc08d">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;amp;subset=latin,latin-ext|Roboto Mono">
+    
+    <!-- main page styles -->
+    <%- css(isIndex ? 'css/index' : 'css/page') %>
+  </head>
+  <body class="<%- isIndex ? '' : 'docs' -%>">
+    <div id="mobile-bar" <%- isIndex ? 'class="top"' : '' %>>
+      <a class="menu-button"></a>
+      <a class="logo" href="/"></a>
+    </div>
+    <%- partial('partials/header') %>
+    <%- body %>
+  </body>
+</html>

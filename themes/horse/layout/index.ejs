@@ -11,7 +11,7 @@
     <div class="left">
       <h2 class="horse">Horse</h2>
       <h1>
-        Framework web <br> rápido, flexível e <br> minimalista para <br> <span class="red">Delphi</span>
+        <%= page.subtitle %><br><span class="red">Delphi</span>
       </h1>
     </div>
     <div class="right">
@@ -19,31 +19,14 @@
         $ boss install github.com/HashLoad/horse
       </code>
       <p>
-        <a class="button white" href="<%- url_for("/guide/") %>">COMEÇAR</a>
+        <a class="button white" href="<%- url_for("/guide/") %>"><%- __('index.get_started') %></a>
         <a class="button gray" href="https://github.com/HashLoad/horse" target="_blank">GITHUB</a>
       </p>    
     </div>
   </div>
 </div>
   
-<div id="highlights">
-  <div class="inner">
-      <div class="point">
-        <h2>Performático</h2>
-        <p>Abstrai uma camada para gerenciar aplicações web, deixando todos os recursos do Object Pascal a sua disposição.</p>
-      </div>
-
-    <div class="point">
-      <h2>Flexível</h2>
-      <p>Com diversos <i>middlewares</i> a sua disposição.</p>
-    </div>
-
-    <div class="point">
-        <h2>Minimalista</h2>
-        <p>Simples para começar, porém robusto para suas necessidades.</p>
-      </div>
-  </div>
-</div>
+<%- page.content %>
 
 <div id="footer">
   <p>
@@ -54,6 +37,6 @@
       <%- partial('icons/youtube') %>
     </a>
   </p>
-  <p>Distribuído sob a <a href="https://opensource.org/licenses/MIT" target="_blank">Licença MIT</a><br>
+  <p><%- __('footer.license')%> <a href="https://opensource.org/licenses/MIT" target="_blank"><%- __('footer.license_mit')%></a><br>
   Copyright &copy; 2018-<%- new Date().getFullYear() %> HashLoad</p>
 </div>

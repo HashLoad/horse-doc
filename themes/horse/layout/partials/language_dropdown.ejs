@@ -1,7 +1,8 @@
 <li class="nav-dropdown-container language">
-  <a class="nav-link">Traduções</a><span class="arrow"></span>
+  <a class="nav-link"><%- __('menu.translations')%></a><span class="arrow"></span>
   <ul class="nav-dropdown">
-    <li><a href="https://horse.org/<%- page.path %>" class="nav-link" target="_blank">Inglês</a></li>
-    <li><a href="https://br.horse.org/<%- page.path %>" class="nav-link" target="_blank">Português</a></li>
+    <% for (let lang in site.data.languages) { %>
+      <li><a href="<%- change_lang(lang) %>" class="nav-link"><%- lang_name(lang); %></a></li>
+    <% } %>
   </ul>
 </li>

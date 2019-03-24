@@ -1,0 +1,14 @@
+menu:
+  guide: Guia
+  lean: Aprenda
+  tutorials: Tutoriais
+  examples: Exemplos
+  team: Equipe
+  translations: Traduções
+
+index:
+  get_started: COMEÇAR
+
+footer:
+  license: Distribuído sob a
+  license_mit: Licença MIT

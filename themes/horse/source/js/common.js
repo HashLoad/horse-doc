@@ -145,21 +145,12 @@
 
     // build sidebar
     var currentPageAnchor = sidebar.querySelector('.sidebar-link.current')
-    var contentClasses = document.querySelector('.content').classList
-    var isAPIOrStyleGuide = (
-      contentClasses.contains('api') ||
-      contentClasses.contains('style-guide')
-    )
-    if (currentPageAnchor || isAPIOrStyleGuide) {
+    if (currentPageAnchor) {
       var allHeaders = []
       var sectionContainer
-      if (isAPIOrStyleGuide) {
-        sectionContainer = document.querySelector('.menu-root')
-      } else {
-        sectionContainer = document.createElement('ul')
-        sectionContainer.className = 'menu-sub'
-        currentPageAnchor.parentNode.appendChild(sectionContainer)
-      }
+      sectionContainer = document.createElement('ul')
+      sectionContainer.className = 'menu-sub'
+      currentPageAnchor.parentNode.appendChild(sectionContainer)
       var headers = content.querySelectorAll('h2')
       if (headers.length) {
         each.call(headers, function (h) {
@@ -168,7 +159,7 @@
           allHeaders.push(h)
           allHeaders.push.apply(allHeaders, h3s)
           if (h3s.length) {
-            sectionContainer.appendChild(makeSubLinks(h3s, isAPIOrStyleGuide))
+            sectionContainer.appendChild(makeSubLinks(h3s))
           }
         })
       } else {
@@ -211,7 +202,7 @@
       new SmoothScroll('a[href*="#"]', {
         speed: 400,
         speedAsDuration: true,
-        offset: function (anchor, toggle) {
+        offset: function (anchor) {
           let dataTypeAttr = anchor.attributes['data-type']
           if(dataTypeAttr && dataTypeAttr.nodeValue === 'theme-product-title') {
             return 300
@@ -291,11 +282,8 @@
       return h3s
     }
 
-    function makeSubLinks (h3s, small) {
+    function makeSubLinks (h3s) {
       var container = document.createElement('ul')
-      if (small) {
-        container.className = 'menu-sub'
-      }
       h3s.forEach(function (h) {
         container.appendChild(makeLink(h))
       })

@@ -1,4 +1,4 @@
-<% var isIndex = page.path === 'index.html' %>
+<% var isIndex = page.canonical_path === 'index.html' %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,7 +42,7 @@
       <div id="main" class="fix-sidebar">
         <%- body %>
       </div>
-      <script src="<%- url_for("/js/smooth-scroll.min.js") %>"></script>
+      <script src="<%- url_for('/js/smooth-scroll.min.js') %>"></script>
     <% } else { %>
       <%- body %>
     <% } %>

@@ -4,10 +4,10 @@
   </form>
 </li>
 <li>
-  <a href="<%- url_for("/guide/") %>" class="nav-link<%- page.path.match(/\/guide(\/|$)/) ? ' current' : '' %>">Guia</a>
+  <a href="<%- url_for("/guide/") %>" class="nav-link<%- page.path.match(/\/guide(\/|$)/) ? ' current' : '' %>"><%- __('menu.guide')%></a>
 </li>
 <%- partial('partials/learn_dropdown') %>
 <li>
-  <a href="<%- url_for("/guide/team.html") %>" class="nav-link team<%- page.path.match(/team\.html/) ? ' current' : '' %>">Equipe</a>
+  <a href="<%- url_for("/guide/team.html") %>" class="nav-link team<%- page.path.match(/team\.html/) ? ' current' : '' %>"><%- __('menu.team')%></a>
 </li>
 <%- partial('partials/language_dropdown') %>

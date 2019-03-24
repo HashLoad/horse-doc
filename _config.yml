@@ -7,7 +7,8 @@ title: Horse
 subtitle: 
 description: "Horse - Fast, opinionated, minimalist web framework for Delphi"
 author: HashLoad
-language: pt-BR
+language: en
+i18n_dir: :lang
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

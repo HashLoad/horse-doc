@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "/public"
+
+[[redirects]]
+  from = "/"
+  to = "/pt-br/"
+  status = 302
+  conditions = {Language = ["pt-br"]}

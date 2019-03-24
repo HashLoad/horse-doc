@@ -10,3 +10,12 @@ hexo.extend.helper.register('change_lang', function (lang) {
 
   return path + canonical;
 });
+
+hexo.extend.helper.register('url_for_lang', function (path) {
+  const lang = this.page.lang;
+  let url = this.url_for(path);
+
+  if (lang !== 'en' && url[0] === '/') url = '/' + lang + url;
+
+  return url;
+});

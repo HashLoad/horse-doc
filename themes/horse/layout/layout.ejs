@@ -27,6 +27,10 @@
     
     <!-- main page styles -->
     <%- css(isIndex ? 'css/index' : 'css/page') %>
+
+    <script>
+      window.PAGE_TYPE = "<%- page.type %>"
+    </script>    
   </head>
   <body class="<%- isIndex ? '' : 'docs' -%>">
     <div id="mobile-bar" <%- isIndex ? 'class="top"' : '' %>>
@@ -34,6 +38,15 @@
       <a class="logo" href="/"></a>
     </div>
     <%- partial('partials/header') %>
-    <%- body %>
+    <% if (!isIndex) { %>
+      <div id="main" class="fix-sidebar">
+        <%- body %>
+      </div>
+      <script src="<%- url_for("/js/smooth-scroll.min.js") %>"></script>
+    <% } else { %>
+      <%- body %>
+    <% } %>
+
+    <script src="<%- url_for('/js/common.js') %>"></script>
   </body>
 </html>

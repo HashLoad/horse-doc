@@ -1,5 +1,6 @@
 menu:
   guide: Guia
+  api: API
   lean: Aprenda
   tutorials: Tutoriais
   examples: Exemplos
@@ -12,3 +13,5 @@ index:
 footer:
   license: Distribuído sob a
   license_mit: Licença MIT
+  edit: Encontrou um erro ou quer contribuir com a documentação?
+  edit_text_link: Edite esta página no Github!

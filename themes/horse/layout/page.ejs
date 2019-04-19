@@ -37,9 +37,9 @@
     </div>
   <% } %>
   <div class="footer">
-    Encontrou um erro ou quer contribuir com a documentação?
-    <a href="https://github.com/<%- page.path.replace(/\.html$/, '.md') %>" target="_blank">
-      Edite esta página no Github!
+    <%- __('footer.edit')%>
+    <a href="https://github.com/hashload/horse-doc<%- page.path.replace(/\.html$/, '.md') %>" target="_blank">
+      <%- __('footer.edit_text_link')%>
     </a>
   </div>
 </div>

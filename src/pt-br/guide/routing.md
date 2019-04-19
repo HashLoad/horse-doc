@@ -7,7 +7,7 @@ order: 3
 **Roteamento** é como uma aplicação responderá uma requisição em um *endpoint*, que por sua vez é composto de um caminho e um método.
 
 ``` delphi
-  App.Metodo('endereco', Funcao);
+  App.Metodo('endpoint', Funcao);
 ```
 
 ### Métodos
@@ -82,16 +82,16 @@ Também podemos ter parâmetros nas rotas:
   App.Get('/usuarios/:id', 
     procedure (Req: THorseRequest; Res: THorseResponse; Next: TProc)
     begin
-      Req.Params.id; // Obtem o valor informado no parâmetro
+      Req.Params['id']; // Obtem o valor informado no parâmetro
     end);
   );
 
   App.Get('/blog/:autor/:data/:post', 
     procedure (Req: THorseRequest; Res: THorseResponse; Next: TProc)
     begin
-      Req.Params.autor;
-      Req.Params.data;
-      Req.Params.post;
+      Req.Params['autor'];
+      Req.Params['data'];
+      Req.Params['post'];
     end);
   );
 ```
@@ -121,7 +121,7 @@ O `Req` provê todas as informações da requisição que chegou na rota, como p
   );
 ```
 
-O `Res` representa a resposta que nós iremos enviar para a requisição, então podemos definir os dados, e também o [Código de Status](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status) da resposta.
+O `Res` representa a resposta que nós iremos enviar para a requisição, então podemos definir os dados, também o [Código de Status](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status) e cabeçalho da resposta.
 
 ``` delphi
   App.Get('/', 
@@ -129,8 +129,30 @@ O `Res` representa a resposta que nós iremos enviar para a requisição, então
     begin
       Res.Send('resposta'); // Dados da resposta
       Res.Status(200);      // Status de OK
+      Res.Headers;          // Cabeçalho da resposta
     end);
   );
 ```
 
 O `Next` te possiilita chamar o próximo procedimento na sequência de processamento da rota.
+
+``` delphi
+  App.Get('/:nome', [
+    procedure (Req: THorseRequest; Res: THorseResponse; Next: TProc)
+    begin
+      if (Req.Params['id'] = 'foo') then
+      begin
+        Res.Send('bar');
+        raise EHorseCallbackInterrupted.Create;
+      end
+      else
+        Next;
+    end,
+    procedure (Req: THorseRequest; Res: THorseResonse; Next: TProc)
+    begin
+      Res.Send('fizz');
+    end
+  ]),
+```
+
+Obs.: Caso você não deseje continuar os procedimentos, chame a exceção `EHorseCallbackInterrupted`.

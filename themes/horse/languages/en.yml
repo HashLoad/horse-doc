@@ -1,5 +1,6 @@
 menu:
   guide: Guide
+  api: API
   lean: Lean
   tutorials: Tutorials
   examples: Exemples
@@ -12,3 +13,5 @@ index:
 footer:
   license: Released under the
   license_mit: MIT License
+  edit: Caught a mistake or want to contribute to the documentation?
+  edit_text_link: Edit this page on GitHub! 

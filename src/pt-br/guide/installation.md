@@ -9,7 +9,7 @@ order: 1
 A forma mais fácil e recomendada de instalar o Horse é com [Boss](https://github.com/HashLoad/boss), assim é possível gerenciar a versão e também adicionar automaticamente à *Library Path* do Delphi.
 
 ``` bash
-$ boss install github.com/HashLoad/horse
+$ boss install horse
 ```
 
 ### Manual

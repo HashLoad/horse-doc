@@ -19,19 +19,17 @@ No tópico [Instalação](installation.html) você verá como instalar o Horse.
 No núcleo do Horse está um sistema que nos permite declarativamente mapear rotas *HTTP* usando uma sintaxe muito simples:
 
 ``` delphi
-var
-  App: THorse;
-begin
-  App := THorse.Create(9000);
+uses Horse;
 
-  App.Get('/ping',
-    procedure (Req: THorseRequest; Res: THorseResponse; Next: TProc)
+begin
+  THorse.Get('/ping',
+    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
     begin
       Res.Send('pong');
     end);
-    
-  App.Start;
-end;
+
+  THorse.Listen(9000);
+end.
 ```
 
 Acabamos de criar nosso primeiro servidor Horse!

@@ -13,9 +13,9 @@ hexo.extend.helper.register('change_lang', function (lang) {
 
 hexo.extend.helper.register('url_for_lang', function (path) {
   const lang = this.page.lang;
-  let url = this.url_for(path);
+  let url = path;
 
   if (lang !== 'en' && url[0] === '/') url = '/' + lang + url;
 
-  return url;
+  return this.url_for(url);
 });

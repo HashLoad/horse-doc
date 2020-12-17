@@ -8,7 +8,7 @@ hexo.extend.helper.register('change_lang', function (lang) {
   let path = '/';
   if (lang !== 'en') path += lang + '/';
 
-  return path + canonical;
+  return this.url_for(path + canonical);
 });
 
 hexo.extend.helper.register('url_for_lang', function (path) {

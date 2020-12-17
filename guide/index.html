@@ -123,7 +123,7 @@
       
         <h2>
           
-          Guia
+          Guide
         </h2>
         <ul class="menu-root">
   
@@ -141,7 +141,15 @@
     <h1>Introduction</h1>
   
   
-    <h2 id="What-is-Horse"><a href="#What-is-Horse" class="headerlink" title="What is Horse?"></a>What is Horse?</h2>
+    <h2 id="What-is-Horse"><a href="#What-is-Horse" class="headerlink" title="What is Horse?"></a>What is Horse?</h2><p>Horse is a <strong>framework</strong> for building web applications. As the main library, it is easy to adopt and integrate with other existing libraries or projects.</p>
+<h2 id="First-Steps"><a href="#First-Steps" class="headerlink" title="First Steps"></a>First Steps</h2><p>The simplest way to test Horse is by installing. Feel free to install it and accompany us with some basic examples.</p>
+<p>In the topic <a href="installation.html">Installation</a> you will see how to install Horse.</p>
+<h2 id="Basic-Notions"><a href="#Basic-Notions" class="headerlink" title="Basic Notions"></a>Basic Notions</h2><p>At the heart of Horse is a system that allows us to declaratively map <em>HTTP</em> routes using a very simple syntax:</p>
+<figure class="highlight delphi"><table><tr><td class="code"><pre><code class="hljs delphi"><span class="hljs-keyword">uses</span> Horse;<br><br><span class="hljs-keyword">begin</span><br>  THorse.Get(<span class="hljs-string">&#x27;/ping&#x27;</span>,<br>    <span class="hljs-function"><span class="hljs-keyword">procedure</span><span class="hljs-params">(Req: THorseRequest; Res: THorseResponse; Next: TProc)</span></span><br><span class="hljs-function">    <span class="hljs-title">begin</span></span><br><span class="hljs-function">      <span class="hljs-title">Res</span>.<span class="hljs-title">Send</span><span class="hljs-params">(<span class="hljs-string">&#x27;pong&#x27;</span>)</span>;</span><br>    <span class="hljs-keyword">end</span>);<br><br>  THorse.Listen(<span class="hljs-number">9000</span>);<br><span class="hljs-keyword">end</span>.<br></code></pre></td></tr></table></figure>
+
+<p>We just created our first Horse server!</p>
+<h2 id="Ready-for-More"><a href="#Ready-for-More" class="headerlink" title="Ready for More?"></a>Ready for More?</h2><p>We introduced Horse briefly - the rest of this guide will delve into other advanced features in a much greater level of detail, so read on!</p>
+
   
   
     <div class="guide-links">

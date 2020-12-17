@@ -1,6 +1,5 @@
 server {
   listen $PORT default_server;
-  server_name horse.hashload.io;
   location / {
     include  /etc/nginx/mime.types;
     root   /usr/share/nginx/html;

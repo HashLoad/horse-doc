@@ -1,9 +1,9 @@
 FROM node:15-alpine3.10
-COPY package.json package-lock.json /home/app/node_docker/
 WORKDIR /home/app/node_docker/
+COPY package.json package-lock.json /home/app/node_docker/
 RUN npm install -g hexo-cli
 RUN npm install
-COPY . /home/app/node_docker/
+COPY . ./
 RUN hexo generate -d
 
 FROM nginx:1.17.3

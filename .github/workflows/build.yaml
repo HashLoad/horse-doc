@@ -14,9 +14,8 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          npm install hexo-cli
           npm install
-          hexo clean && hexo deploy
+          npm run deploy
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3

@@ -1,24 +1,26 @@
 {
-  "name": "horse",
+  "name": "hexo-site",
+  "version": "0.0.0",
   "private": true,
-  "hexo": {
-    "version": "3.9.0"
-  },
   "scripts": {
-    "start": "hexo server",
-    "build": "hexo clean && hexo generate",
-    "deploy": "npm run build && hexo deploy"
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
+  },
+  "hexo": {
+    "version": "5.2.0"
   },
   "dependencies": {
-    "hexo": "^3.8.0",
-    "hexo-deployer-git": "^1.0.0",
-    "hexo-generator-archive": "^0.1.5",
-    "hexo-generator-category": "^0.1.3",
-    "hexo-generator-index": "^0.2.1",
-    "hexo-generator-tag": "^0.2.0",
-    "hexo-renderer-ejs": "^0.3.1",
-    "hexo-renderer-marked": "^0.3.2",
-    "hexo-renderer-stylus": "^0.3.3",
-    "hexo-server": "^0.3.3"
+    "hexo": "^5.0.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-index": "^2.0.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-marked": "^3.0.0",
+    "hexo-renderer-stylus": "^2.0.0",
+    "hexo-server": "^2.0.0",
+    "hexo-theme-landscape": "^0.0.3"
   }
 }

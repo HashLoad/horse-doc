@@ -1,0 +1,7 @@
+server {
+  listen $PORT default_server;
+  location / {
+    include  /etc/nginx/mime.types;
+    root   /usr/share/nginx/html;
+  }
+}

@@ -16,7 +16,7 @@ jobs:
         run: |
           npm install -g hexo-cli
           npm install
-          hexo deploy
+          hexo clean && hexo deploy
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3

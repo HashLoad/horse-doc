@@ -22,7 +22,7 @@ pretty_urls:
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
-source_dir: source
+source_dir: src
 public_dir: public
 tag_dir: tags
 archive_dir: archives
@@ -46,11 +46,11 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: false
-  tab_replace: ''
+  tab_replace:
   wrap: true
-  hljs: false
+  hljs: true
 prismjs:
   enable: false
   preprocess: true
@@ -101,13 +101,7 @@ ignore:
 theme: horse
 
 # Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
+## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
-
-
-# # Deployment
-# ## Docs: https://hexo.io/docs/deployment.html
-# deploy:
-#   type: git
-#   repo: git@github.com:HashLoad/horse-doc.git
+  type: git
+  repo: git@github.com:HashLoad/horse-doc.git

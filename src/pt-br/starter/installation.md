@@ -1,6 +1,6 @@
 ---
 title: Instalação
-type: guide
+type: starter
 order: 1
 ---
 
@@ -20,3 +20,6 @@ $ boss install horse
 ### Manual
 
 Faça o [download](https://github.com/HashLoad/boss/releases/latest) da última versão do Horse e inclua a pasta __src/__ no *Library Path* do seu projeto.
+
+Veja mais em:
+ * Criando um [Olá, mundo!](hello-world.html).

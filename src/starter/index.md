@@ -1,6 +1,6 @@
 ---
 title: Introduction
-type: guide
+type: starter
 order: 2
 ---
 
@@ -37,3 +37,8 @@ We just created our first Horse server!
 ## Ready for More?
 
 We introduced Horse briefly - the rest of this guide will delve into other advanced features in a much greater level of detail, so read on!
+
+See more at:
+ * [Installing](installation.html) Horse.
+ * Creating a [Hello world!](hello-world.html).
+ * Understanding [routing](basic-routing.html).

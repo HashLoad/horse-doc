@@ -1,10 +1,13 @@
 menu:
-  guide: Guide
-  lean: Lean
-  tutorials: Tutorials
-  examples: Exemples
-  team: Team
+  starter:
+    introduction: Introduction
+    installation: Installation
+    hello-world: Hello world!
+    basic-routing: Basic Routing
   translations: Translations
+
+sidebar:
+  starter: Starter
 
 index:
   get_started: GET STARTED

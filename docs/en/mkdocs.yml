@@ -1,0 +1,54 @@
+site_name: Horse
+site_description: Horse web framework, an Express inspired web framework for Delphi. Designed to ease things up for fast development in a minimalist way and with high performance.
+# site_url: https://github.com/HashLoad/horse
+theme: 
+  icon:
+    logo: material/horse
+  language: en
+  languages:
+  - en: /en/
+  - pt: /pt/
+  palette:
+    primary: deep orange
+    
+  name: material
+  features:
+    - search.seggest
+    - search.highlight
+    - contents.tabs.link
+  
+plugins:
+  - search
+  - i18n:
+      default_language: en
+      languages:
+        en: English
+        pt: Português
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.superfences:
+      preserve_tabs: true
+      custom_fences:
+        # Mermaid diagrams
+        - name: mermaid
+          class: mermaid
+  - footnotes
+
+extra:
+  alternate:
+  - link: ./en/
+    name: en - English
+  - link: ./pt/
+    name: pt - português
+
+nav:
+# - Languages:
+  # - en: /en/
+  # - pt: /pt/
+- installation: installation.md
+- hello world: hello-world.md
+- routing: routing.md

@@ -1,8 +1,0 @@
-<li class="nav-dropdown-container language">
-  <a class="nav-link"><%- __('menu.translations')%></a><span class="arrow"></span>
-  <ul class="nav-dropdown">
-    <% for (let lang in site.data.languages) { %>
-      <li><a href="<%- change_lang(lang) %>" class="nav-link"><%- lang_name(lang); %></a></li>
-    <% } %>
-  </ul>
-</li>

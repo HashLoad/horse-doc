@@ -4,6 +4,9 @@ Setup to document Horse based on mkdocs (Python)
 Check out the **pt-br** version for readme [leiame.md](LEIAME.md)
 
 To generate this documentation i've used the python 3.6 (ou newer)
+
+If you does not have Python installed chckout the [Python Installation Tutorial] (Python.md)
+
 Create an virtual environment (recommended) or just type `pip install -r requirements.txt`
 
 ## Setup

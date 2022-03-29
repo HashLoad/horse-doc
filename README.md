@@ -1,11 +1,11 @@
 # horse-mkdocs
-This is a setup to document Horse based on mkdocs (Python)
+This is a how-to document Horse based on mkdocs (Python)
 
-Check out the **pt-br** version for readme [leiame.md](LEIAME.md)
+Check out the **pt-br** readme version on [leiame.md](LEIAME.md)
 
-To generate this documentation i've used the python 3.6 (ou newer)
+To generate this documentation Python 3.6 (ou newer) is needed
 
-If you does not have Python installed chckout the [Python Installation Tutorial] (Python.md)
+If you does not have Python installed check it out on [Python Installation Tutorial] (Python.md)
 
 Create an virtual environment (recommended) or just type `pip install -r requirements.txt`
 
@@ -13,8 +13,8 @@ Create an virtual environment (recommended) or just type `pip install -r require
 
 1. Using virtual environment
 
-To use virtual env , first of all, install **virtualenv** lib by cmd `pip install virtualenv`
-Then generate virtual env with following script.
+To use a virtual **env**, first of all, install **virtualenv** lib by cmd `pip install virtualenv`
+Then generate the virtual **env** with following script.
 
 ```shell
 #On Windows
@@ -26,13 +26,13 @@ Then generate virtual env with following script.
 >(venv) mkdocs serve -a localhost:8082
 ```
 
-!!! This setup just allow you to work with one translation per time
-I didn't not solve these translation feature at all, if you have some suggestion please do it. 
+!!! This setup just allows you to work with one translation per time
+I did not solve thid translation feature at all, feel free to share if you have any suggestion. 
 
-It will show a tag **(venv)** on left of console, that indicates that the virtual env is activated.
-Last one, i've started the documentation server in port 8082
+It will show a tag **(venv)** on left side of the console, indicating that the virtual **env** is activated.
+At this point, the documentation server should be running on port 8082.
 
-2. Without using virtual env
+2. Without using virtual **env**
 
 In this case, that's recommended to add the python into environmental variables
 The application will install all python packages into the same default folder that's python installed on
@@ -47,15 +47,16 @@ The application will install all python packages into the same default folder th
 ## How to build
 
 Before you contribute acess owr [Conduct Guide] 
-You can help wit any thing
+Any help is welcome:
     Creating a translation
     Solving issues
     Creating new pages with new topics
     Includding links and references to tutoriais and articles (no comercial content allowed)
-    Review the pages
+    Reviewing the pages
     Repairing bugs or suggesting new approachs
+    etc..
 
-Look at the oppened issues https://github.com/HashLoad/horse-doc/issues
+Take a look at oppened issues https://github.com/HashLoad/horse-doc/issues
 Check out the languages that was not translated yet
 
 ## Improving contributions

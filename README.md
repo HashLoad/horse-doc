@@ -55,7 +55,7 @@ You can help wit any thing
     Review the pages
     Repairing bugs or suggesting new approachs
 
-Look at the oppened issues https://github.com/ricardodarocha/horse-mkdocs/issues
+Look at the oppened issues https://github.com/HashLoad/horse-doc/issues
 Check out the languages that was not translated yet
 
 ## Improving contributions
@@ -69,5 +69,13 @@ See more. [link]
 
 ## Let starting
 
-Fork this project on https://github.com/ricardodarocha/horse-mkdocs
-Give your contrubution and create a Pull Request for `ricardodarocha/horse-mkdocs`
+Fork this project on https://github.com/HashLoad/horse-doc
+Give your contrubution and create a Pull Request for `HashLoad/horse-doc`
+
+## Todo list
+
+[ ] Write the [Conduct Guide] 
+[ ] Write tutorials how to create documentation
+[ ] a) Create diagrams with https://mermaid-js.github.io/mermaid/ [link] 
+[ ] b) Use advanced features of mk-docs [link]  
+[ ] c) Working with openned issues [link]  

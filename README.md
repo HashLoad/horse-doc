@@ -1,5 +1,5 @@
 # horse-mkdocs
-Setup to document Horse based on mkdocs (Python)
+This is a setup to document Horse based on mkdocs (Python)
 
 Check out the **pt-br** version for readme [leiame.md](LEIAME.md)
 

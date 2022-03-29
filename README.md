@@ -74,8 +74,8 @@ Give your contrubution and create a Pull Request for `HashLoad/horse-doc`
 
 ## Todo list
 
-[ ] Write the [Conduct Guide] 
-[ ] Write tutorials how to create documentation
-[ ] a) Create diagrams with https://mermaid-js.github.io/mermaid/ [link] 
-[ ] b) Use advanced features of mk-docs [link]  
-[ ] c) Working with openned issues [link]  
+[ ] Write the [Conduct Guide]   
+[ ] Write tutorials how to create documentation  
+[ ] a) Create diagrams with https://mermaid-js.github.io/mermaid/ [link]   
+[ ] b) Use advanced features of mk-docs [link]    
+[ ] c) Working with openned issues [link]    

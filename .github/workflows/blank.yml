@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - "**.md"
-      - "/docs/pt/mkdocs.yml"
+      - "docs/pt/mkdocs.yml"
   workflow_dispatch:
   
 jobs:
@@ -20,4 +20,4 @@ jobs:
       - run: pip install --upgrade pip && pip install mkdocs mkdocs-gen-files
       - run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
       - name: Publish docs
-        run: mkdocs gh-deploy --config-file ../docs/pt/mkdocs.yml
+        run: mkdocs gh-deploy

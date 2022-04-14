@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#delphi" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -265,6 +270,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Olá Mundo
@@ -344,6 +351,24 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -351,11 +376,10 @@
                 
 
 
-  <h1>Olá Mundo</h1>
-
 <p>Crie um projeto do tipo Console Application com o Delphi ou Lazarus, salve o seu projeto com o nome que você quiser (este exemplo foi salvo com o nome <em>hashload_horse</em>). Então instale o Horse e inclua nas dependências do seu projeto, de acordo com o <a href="../installation">guia de instalação</a>.</p>
-<p>Após instalar o Horse e criar o seu projeto, inclua o seguinte cídigo:</p>
-<p><div class="highlight"><pre><span></span><code><span class="k">uses</span>
+<p>Após instalar o Horse e criar o seu projeto, inclua o seguinte código:</p>
+<h1 id="delphi">Delphi</h1>
+<div class="highlight"><pre><span></span><code><span class="k">uses</span>
   <span class="n">System</span><span class="o">.</span><span class="n">SysUtils</span><span class="o">,</span>
   <span class="n">Horse</span><span class="o">;</span>
 
@@ -376,8 +400,8 @@
     <span class="k">end</span><span class="p">)</span>
 <span class="k">end</span><span class="o">.</span>
 </code></pre></div>
-ou
-<div class="highlight"><pre><span></span><code><span class="cm">{$MODE DELPHI}{$H+}</span>
+<h1 id="lazarus">Lazarus</h1>
+<p><div class="highlight"><pre><span></span><code><span class="cm">{$MODE DELPHI}{$H+}</span>
 
 <span class="k">uses</span>
   <span class="n">SysUtils</span><span class="o">,</span>

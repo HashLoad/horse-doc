@@ -1,5 +1,5 @@
 ---
-title: Get Starting
+title: Routing
 type: starter
 order: 1
 ---

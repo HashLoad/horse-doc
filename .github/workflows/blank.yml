@@ -23,10 +23,8 @@ jobs:
       - name: Install dependencies
         run: python3 -m pip install -r requirements.txt
           
-      - name: Build site Portuguese
-        working-directory: ./docs/pt
+      - name: Build Site
         run: mkdocs build
 
       - name: Deploy
-        working-directory: ./docs/pt
-        run: mkdocs gh-deploy -d ./public 
+        run: mkdocs gh-deploy

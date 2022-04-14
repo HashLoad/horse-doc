@@ -23,10 +23,26 @@ theme:
 plugins:
   - search
   - i18n:
-      default_language: pt
       languages:
         en: English
         pt: Português
+      default_language: pt
+      no_translation:
+        en: "This page isn't translated to English."
+        pt: "Esta página não está traduzida para português."
+      translate_nav:
+        en:
+          section title: "Section"
+          subsection: "Subsection"
+          page title: "Page with title translated"
+          guide: "Guide"
+        pt:
+          section title: "Seção"
+          subsection: "Subseção"
+          page title: "Página com título traduzido"
+          guide: "Guia"
+        
+      
 markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -45,8 +61,10 @@ extra:
   alternate:
   - link: ./en/
     name: en - English
+    lang: en
   - link: ./
-    name: pt - português
+    name: pt - Português
+    lang: pt
   social:
     - icon: fontawesome/brands/telegram
       link: https://t.me/hashload
@@ -59,9 +77,13 @@ nav:
 # - Languages:
   # - en: /en/
   # - pt: /pt/
-- Bem vindo: index.md
-- Instalação: installation.md
-- Olá Mundo: hello-world.md
-- Rotas: basic-routing.md
-- Guia:
-  - 'Roteamento': 'routing.md'
+- index.md
+- index.en.md
+- installation.md
+- installation.en.md
+- hello-world.md
+- hello-world.en.md
+- basic-routing.md
+- basic-routing.en.md
+- guide:
+  - 'routing.md' 

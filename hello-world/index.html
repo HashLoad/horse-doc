@@ -382,9 +382,11 @@
 <h1 id="ola-mundo">Olá mundo!</h1>
 <p>Crie um projeto do tipo Console Application com o Delphi ou Lazarus, salve o seu projeto com o nome que você quiser (este exemplo foi salvo com o nome <em>hashload_horse</em>). Então instale o Horse e inclua nas dependências do seu projeto, de acordo com o <a href="../installation">guia de instalação</a>.</p>
 <p>Após instalar o Horse e criar o seu projeto, inclua o seguinte código:</p>
-<h1 id="delphi">Delphi</h1>
-<div class="highlight"><pre><span></span><code><span class="k">uses</span>
-  <span class="n">System</span><span class="o">.</span><span class="n">SysUtils</span><span class="o">,</span>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Delphi</label><label for="__tabbed_1_2">Lazarus</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="k">uses</span> 
+  <span class="n">System</span><span class="o">.</span><span class="n">SysUtils</span><span class="o">,</span> 
   <span class="n">Horse</span><span class="o">;</span>
 
 <span class="k">const</span>
@@ -404,8 +406,9 @@
     <span class="k">end</span><span class="p">)</span>
 <span class="k">end</span><span class="o">.</span>
 </code></pre></div>
-<h1 id="lazarus">Lazarus</h1>
-<p><div class="highlight"><pre><span></span><code><span class="cm">{$MODE DELPHI}{$H+}</span>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="cm">{$MODE DELPHI}{$H+}</span>
 
 <span class="k">uses</span>
   <span class="n">SysUtils</span><span class="o">,</span>
@@ -427,15 +430,17 @@
 <span class="k">begin</span>
   <span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span> <span class="n">GetHelloWorld</span><span class="p">)</span><span class="o">;</span>
   <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="p">(</span><span class="n">HORSE_PORT</span><span class="o">,</span> <span class="n">HorseListenCallback</span><span class="p">)</span><span class="o">;</span>
-<span class="k">end</span><span class="o">.</span>  
+<span class="k">end</span><span class="o">.</span> 
 </code></pre></div>
-A aplicação irá iniciar um servidor escutando na porta 9000.</p>
+</div>
+</div>
+</div>
+<p>A aplicação irá iniciar um servidor escutando na porta 9000.</p>
 <p>Agora, compile e rode a aplicação. Você verá no console a mensagem <strong>Servidor rodando em 0.0.0.0:9000</strong></p>
 <p>A Aplicação irá responder com a mensagem "Olá Mundo" na rota <strong>(/)</strong> para o <em>cliente</em> que fizer a <em>requisição</em>. Para qualquer outra rota, ela irá responder com uma mensagem <strong>Not Found</strong> e <em>status code</em> <strong>404</strong> (Não encontrado)</p>
 <p>Então abra o browser, digite http://localhost:9000/ para acessar a sua primeira rota.</p>
 <p>Agora Você está pronto para desenvolver com o Horse!</p>
-<p>Próximo passo:
- * Entendendo <a href="../basic-routing">rotas</a>.</p>
+<p>Próximo passo: <a href="../basic-routing">Entendendo rotas</a></p>
 
               
             </article>

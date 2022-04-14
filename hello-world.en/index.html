@@ -382,7 +382,9 @@
 <h1 id="hello-world">Hello world!</h1>
 <p>First create a console project in Delphi or Lazarus, save the project with the name you want (in this example, it will be saved as <em>hashload_horse</em>). Then install Horse as a dependency on your project, according to the <a href="../installation.en">installation guide</a>.</p>
 <p>After Horse is created and installed in your project, include the following code:</p>
-<h1 id="delphi">Delphi</h1>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Delphi</label><label for="__tabbed_1_2">Lazarus</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">uses</span>
   <span class="n">System</span><span class="o">.</span><span class="n">SysUtils</span><span class="o">,</span>
   <span class="n">Horse</span><span class="o">;</span>
@@ -404,8 +406,9 @@
     <span class="k">end</span><span class="p">)</span>
 <span class="k">end</span><span class="o">.</span>
 </code></pre></div>
-<h1 id="lazarus">Lazarus</h1>
-<p><div class="highlight"><pre><span></span><code><span class="cm">{$MODE DELPHI}{$H+}</span>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="cm">{$MODE DELPHI}{$H+}</span>
 
 <span class="k">uses</span>
   <span class="n">SysUtils</span><span class="o">,</span>
@@ -429,12 +432,14 @@
   <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="p">(</span><span class="n">HORSE_PORT</span><span class="o">,</span> <span class="n">HorseListenCallback</span><span class="p">)</span><span class="o">;</span>
 <span class="k">end</span><span class="o">.</span>  
 </code></pre></div>
-The application starts a server and listens for connections on port 9000. The application responds with a <strong>Hello, world!</strong> on the route <strong>(/)</strong> to the <em>client</em> that made the <em>request</em>. For all other paths, it will respond with a <strong>Not Found</strong> message and <em>status code</em> <strong>404</strong></p>
+</div>
+</div>
+</div>
+<p>The application starts a server and listens for connections on port 9000. The application responds with a <strong>Hello, world!</strong> on the route <strong>(/)</strong> to the <em>client</em> that made the <em>request</em>. For all other paths, it will respond with a <strong>Not Found</strong> message and <em>status code</em> <strong>404</strong></p>
 <p>Now, compile and run the application. You will have as a result on the console something like <strong>Server is running on 0.0.0.0:9000</strong></p>
 <p>Then open a browser, type http://localhost:9000/ in the address bar and browse to view the output.</p>
 <p>If you were able to view the result in your browser, this is great, your server worked correctly. Now you're ready to evolve on Horse!</p>
-<p>See more at:
- * Understanding <a href="../basic-routing.en">routing</a>.</p>
+<p>See more at: <a href="../basic-routing.en">Understanding routing</a></p>
 
               
             </article>

@@ -369,33 +369,42 @@
 </ul>
 <p>Os exemplos a seguir ilustram a definição de rotas simples</p>
 <p>Reply with "Hello World!" to whoever requested (<em>client</em> who made the <em>request</em>):</p>
-<p><div class="highlight"><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/ping&#39;</span><span class="o">,</span>
-  <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
-  <span class="k">begin</span>
-    <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Hello World!&#39;</span><span class="p">)</span><span class="o">;</span>
-  <span class="k">end</span><span class="p">)</span><span class="o">;</span>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">GET</label><label for="__tabbed_1_2">POST</label><label for="__tabbed_1_3">PUT</label><label for="__tabbed_1_4">DELETE</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/ping&#39;</span><span class="o">,</span>
+<span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
+<span class="k">begin</span>
+  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Hello World!&#39;</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="p">)</span><span class="o">;</span>
 </code></pre></div>
-Respond to POST request on the root route (/):
-<div class="highlight"><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Post</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span>
-  <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
-  <span class="k">begin</span>
-    <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Got a POST request&#39;</span><span class="p">)</span><span class="o">;</span>
-  <span class="k">end</span><span class="p">)</span><span class="o">;</span>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">Respond to POST request on the root route (/):</span><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Post</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span>
+<span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
+<span class="k">begin</span>
+  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Got a POST request&#39;</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="p">)</span><span class="o">;</span>
 </code></pre></div>
-Respond to a PUT request to the /user route:
-<div class="highlight"><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Put</span><span class="p">(</span><span class="s">&#39;/user&#39;</span><span class="o">,</span>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">Respond to a PUT request to the /user route</span><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Put</span><span class="p">(</span><span class="s">&#39;/user&#39;</span><span class="o">,</span>
   <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
   <span class="k">begin</span>
     <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Got a PUT request at /user&#39;</span><span class="p">)</span><span class="o">;</span>
   <span class="k">end</span><span class="p">)</span><span class="o">;</span>
 </code></pre></div>
-Respond to a DELETE request to the /user route:
-<div class="highlight"><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Delete</span><span class="p">(</span><span class="s">&#39;/user&#39;</span><span class="o">,</span>
-  <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
-  <span class="k">begin</span>
-    <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Got a DELETE request at /user&#39;</span><span class="p">)</span><span class="o">;</span>
-  <span class="k">end</span><span class="p">)</span><span class="o">;</span>
-</code></pre></div></p>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">Respond to a DELETE request to the /user route</span><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Delete</span><span class="p">(</span><span class="s">&#39;/user&#39;</span><span class="o">,</span>
+<span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
+<span class="k">begin</span>
+  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Got a DELETE request at /user&#39;</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="p">)</span><span class="o">;</span>
+</code></pre></div>
+</div>
+</div>
+</div>
 <p><em>NOTA: A versão atual do <a href="https://www.lazarus-ide.org/index.php?page=downloads">Lazarus 3.2.2</a> não tem suporte a métodos anônimos, veja o exemplo em <a href="../hello-world">Olá Mundo</a> de como informar o callback no Lazarus</em></p>
 
               

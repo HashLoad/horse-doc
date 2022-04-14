@@ -45,4 +45,4 @@ We introduced Horse briefly - the rest of this guide will delve into other advan
 See more at:
  * [Installing](../installation.en) Horse.
  * Creating a [Hello world!](../hello-world.en).
- * Understanding [routing](../routing.en).
+ * Understanding [routing](../basic-routing.en).

@@ -4,6 +4,8 @@ type: starter
 order: 1
 ---
 
+# Hello world!
+
 First create a console project in Delphi or Lazarus, save the project with the name you want (in this example, it will be saved as *hashload_horse*). Then install Horse as a dependency on your project, according to the [installation guide](../installation.en).
 
 After Horse is created and installed in your project, include the following code:

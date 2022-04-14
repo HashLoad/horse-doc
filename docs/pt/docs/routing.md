@@ -2,7 +2,7 @@
 title: Roteamento
 ---
 
-#Roteamento
+## Roteamento
 
 O Roteamento é o mecanismo pelo qual as requisições são direcionadas para o código que as trata. Para obter uma introdução a roteamento, consulte [Roteamento básico](../basic-routing).
 
@@ -22,7 +22,7 @@ begin
 end.
 ```
 
-#Métodos de roteamento
+## Métodos de roteamento
 
 Um método de roteamento é derivado a partir de um dos métodos HTTP, e é anexado a uma procedure que irá tratar esta requisição.
 
@@ -62,7 +62,7 @@ No exemplo a seguir, o manipulador irá ser executado para solicitações para �
     end);
 ```
 
-#Métodos de resposta
+## Métodos de resposta
 
 Os métodos do objeto de resposta (res) na seguinte tabela podem enviar uma resposta ao cliente, e finalizar o ciclo solicitação-resposta.
 

@@ -6,6 +6,9 @@ order: 1
 
 Rotas determinam como a aplicação responderá a uma requisição do *cliente* em um caminho específico chamado *endpoint*, que é uma [URI](https://pt.wikipedia.org/wiki/URI) que especifica um método do protocolo HTTP (POST, PUT, GET, DELETE e além).
 
+*[URI]: Indicador Único de Recurso  
+*[HTTP]: Protocolo de Internet  
+
 Cada rota pode ter mais de um tratamento, que responderá de acordo com a requisição correspondente.
 
 Uma rota possui a seguinte estrutura

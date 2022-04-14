@@ -43,7 +43,9 @@ plugins:
           guide: "Guia"
         
       
-markdown_extensions:
+markdown_extensions:  
+  - abbr
+  - pymdownx.snippets
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.superfences

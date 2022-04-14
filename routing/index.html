@@ -414,7 +414,7 @@
   <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="p">(</span><span class="mi">9000</span><span class="p">)</span><span class="o">;</span>
 <span class="k">end</span><span class="o">.</span>
 </code></pre></div>
-<p>O Horse suporta os seguintes métodos de roteamento que correspondem aos métodos HTTP: get, post, put, patch, head, delete.</p>
+<p>O Horse suporta os seguintes métodos de roteamento que correspondem aos métodos HTTP: GET, POST, PUT, PATCH, HEAD, DELETE.</p>
 <p>Existe um método de roteamento especial,  THorse.All, que não é derivado de nenhum método HTTP. Este método é usado para carregar procedures em um caminho para todos os métodos de solicitação.</p>
 <p>No exemplo a seguir, o manipulador irá ser executado para solicitações para “/test” se você estiver usando GET, POST, PUT, DELETE, ou qualquer outro método de solicitação HTTP que é suportado pelo Horse.</p>
 <div class="highlight"><pre><span></span><code>  <span class="n">THorse</span><span class="o">.</span><span class="n">All</span><span class="p">(</span><span class="s">&#39;/test&#39;</span><span class="o">,</span>
@@ -425,14 +425,44 @@
 </code></pre></div>
 <h1 id="metodos-de-resposta">Métodos de resposta</h1>
 <p>Os métodos do objeto de resposta (res) na seguinte tabela podem enviar uma resposta ao cliente, e finalizar o ciclo solicitação-resposta.</p>
-<p>Método | Descrição |
-Res.Download(AFileName) | Solicita que seja efetuado o download de um arquivo |
-Res.RedirectTo(ALocation) | Redireciona uma solicitação |
-Res.SendFile(AFileName) | Envia um arquivo |
-Res.Send(AContent) | Envia uma string |
-Res.Send<T: class> | Envia um objeto |
-Res.Status(AStatus) | Configura o código do status de resposta |
-Res.ContentType(AContentType) | Configura o ContentType da resposta |</p>
+<table>
+<thead>
+<tr>
+<th>Método</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Res.Download(AFileName)</td>
+<td>Solicita que seja efetuado o download de um arquivo</td>
+</tr>
+<tr>
+<td>Res.RedirectTo(ALocation)</td>
+<td>Redireciona uma solicitação</td>
+</tr>
+<tr>
+<td>Res.SendFile(AFileName)</td>
+<td>Envia um arquivo</td>
+</tr>
+<tr>
+<td>Res.Send(AContent)</td>
+<td>Envia uma string</td>
+</tr>
+<tr>
+<td>Res.Send<T: class></td>
+<td>Envia um objeto</td>
+</tr>
+<tr>
+<td>Res.Status(AStatus)</td>
+<td>Configura o código do status de resposta</td>
+</tr>
+<tr>
+<td>Res.ContentType(AContentType)</td>
+<td>Configura o ContentType da resposta</td>
+</tr>
+</tbody>
+</table>
 
               
             </article>

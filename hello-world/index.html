@@ -282,9 +282,57 @@
   
   
     <li class="md-nav__item">
-      <a href="../routing/" class="md-nav__link">
+      <a href="../basic-routing/" class="md-nav__link">
         Rotas
       </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Guia
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guia" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Guia
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routing/" class="md-nav__link">
+        Roteamento
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -329,27 +377,29 @@
 <span class="k">end</span><span class="o">.</span>
 </code></pre></div>
 ou
-<div class="highlight"><pre><span></span><code><span class="k">uses</span>
-  <span class="n">System</span><span class="o">.</span><span class="n">SysUtils</span><span class="o">,</span>
+<div class="highlight"><pre><span></span><code><span class="cm">{$MODE DELPHI}{$H+}</span>
+
+<span class="k">uses</span>
+  <span class="n">SysUtils</span><span class="o">,</span>
   <span class="n">Horse</span><span class="o">;</span>
 
 <span class="k">const</span>
   <span class="n">HORSE_PORT</span> <span class="o">=</span> <span class="mi">9000</span><span class="o">;</span>
 
-<span class="k">procedure</span> <span class="nf">GetHelloWorld</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span><span class="o">;</span>
+<span class="k">procedure</span> <span class="nf">GetHelloWorld</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TNextProc</span><span class="p">)</span><span class="o">;</span>
 <span class="k">begin</span>
-  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Olá Mundo!&#39;</span><span class="p">)</span><span class="o">;</span>
+  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Ola Mundo!&#39;</span><span class="p">)</span><span class="o">;</span>
 <span class="k">end</span><span class="o">;</span>
 
 <span class="k">procedure</span> <span class="nf">HorseListenCallback</span><span class="p">(</span><span class="n">Horse</span><span class="o">:</span> <span class="n">THorse</span><span class="p">)</span><span class="o">;</span>
 <span class="k">begin</span>
-  <span class="nb">Writeln</span><span class="p">(</span><span class="nb">Format</span><span class="p">(</span><span class="s">&#39;O servidor está rodando em %s:%d&#39;</span><span class="o">,</span> <span class="p">[</span><span class="n">Horse</span><span class="o">.</span><span class="n">Host</span><span class="o">,</span> <span class="n">Horse</span><span class="o">.</span><span class="n">Port</span><span class="p">]))</span><span class="o">;</span>
+  <span class="nb">Writeln</span><span class="p">(</span><span class="nb">Format</span><span class="p">(</span><span class="s">&#39;O servidor esta rodando em %s:%d&#39;</span><span class="o">,</span> <span class="p">[</span><span class="n">Horse</span><span class="o">.</span><span class="n">Host</span><span class="o">,</span> <span class="n">Horse</span><span class="o">.</span><span class="n">Port</span><span class="p">]))</span><span class="o">;</span>
 <span class="k">end</span><span class="o">;</span>
 
 <span class="k">begin</span>
   <span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span> <span class="n">GetHelloWorld</span><span class="p">)</span><span class="o">;</span>
   <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="p">(</span><span class="n">HORSE_PORT</span><span class="o">,</span> <span class="n">HorseListenCallback</span><span class="p">)</span><span class="o">;</span>
-<span class="k">end</span><span class="o">.</span>
+<span class="k">end</span><span class="o">.</span>  
 </code></pre></div>
 A aplicação irá iniciar um servidor escutando na porta 9000.</p>
 <p>Agora, compile e rode a aplicação. Você verá no console a mensagem <strong>Servidor rodando em 0.0.0.0:9000</strong></p>
@@ -357,7 +407,7 @@ A aplicação irá iniciar um servidor escutando na porta 9000.</p>
 <p>Então abra o browser, digite http://localhost:9000/ para acessar a sua primeira rota.</p>
 <p>Agora Você está pronto para desenvolver com o Horse!</p>
 <p>Próximo passo:
- * Entendendo <a href="../routing">rotas</a>.</p>
+ * Entendendo <a href="../basic-routing">rotas</a>.</p>
 
               
             </article>
@@ -387,7 +437,7 @@ A aplicação irá iniciar um servidor escutando na porta 9000.</p>
       
       
         
-        <a href="../routing/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Rotas" rel="next">
+        <a href="../basic-routing/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Rotas" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">

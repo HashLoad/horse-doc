@@ -15,7 +15,7 @@
     
     
       
-        <title>Basic Routing - Horse</title>
+        <title>Roteamento - Horse</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#roteamento" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -93,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Basic Routing
+              Roteamento
             
           </span>
         </div>
@@ -272,6 +277,49 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../basic-routing/" class="md-nav__link">
+        Rotas
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Guia
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guia" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Guia
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
     
   
   
@@ -280,11 +328,20 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Rotas
+        Roteamento
       </a>
       
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -296,6 +353,24 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -303,48 +378,61 @@
                 
 
 
-  <h1>Rotas</h1>
+<h1 id="roteamento">Roteamento</h1>
+<p>O Roteamento é o mecanismo pelo qual as requisições são direcionadas para o código que as trata. Para obter uma introdução a roteamento, consulte <a href="../basic-routing">Roteamento básico</a>.</p>
+<p>O código a seguir é um exemplo de uma rota muito básica.</p>
+<div class="highlight"><pre><span></span><code><span class="k">uses</span> <span class="n">Horse</span><span class="o">;</span>
 
-<p>Rotas determinam como a aplicação responderá a uma requisição do <em>cliente</em> em um caminho específico chamado <em>endpoint</em>, que é uma URI que especifica um método do protocolo HTTP (POST, PUT, GET, DELETE e além).</p>
-<p>Cada rota pode ter mais de um tratamento, que responderá de acordo com a requisição correspondente.</p>
-<p>Uma rota possui a seguinte estrutura</p>
-<div class="highlight"><pre><span></span><code>  <span class="n">THorse</span><span class="o">.</span><span class="n">METHOD</span><span class="p">(</span><span class="n">PATH</span><span class="o">,</span> <span class="n">HANDLER</span><span class="p">)</span><span class="o">;</span>
+<span class="k">begin</span>
+  <span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/ping&#39;</span><span class="o">,</span>
+    <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
+    <span class="k">begin</span>
+      <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;pong&#39;</span><span class="p">)</span><span class="o">;</span>
+    <span class="k">end</span><span class="p">)</span><span class="o">;</span>
+
+  <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="p">(</span><span class="mi">9000</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">.</span>
 </code></pre></div>
-<p>Onde:</p>
-<ul>
-<li><code>METHOD</code> é um método HTTP.</li>
-<li><code>PATH</code> é o caminho no servidor.</li>
-<li><code>HANDLER</code> é um método do delphi (procedure) quando esta rota for acessada.</li>
-</ul>
-<p>Os exemplos a seguir ilustram a definição de rotas simples</p>
-<p>Reply with "Hello World!" to whoever requested (<em>client</em> who made the <em>request</em>):</p>
-<p><div class="highlight"><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/ping&#39;</span><span class="o">,</span>
-  <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
-  <span class="k">begin</span>
-    <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Hello World!&#39;</span><span class="p">)</span><span class="o">;</span>
-  <span class="k">end</span><span class="p">)</span><span class="o">;</span>
+<h1 id="metodos-de-roteamento">Métodos de roteamento</h1>
+<p>Um método de roteamento é derivado a partir de um dos métodos HTTP, e é anexado a uma procedure que irá tratar esta requisição.</p>
+<p>o código a seguir é um exemplo de rotas para a raiz do aplicativo que estão definidas para os métodos GET e POST.</p>
+<div class="highlight"><pre><span></span><code><span class="k">uses</span> <span class="n">Horse</span><span class="o">;</span>
+
+<span class="k">begin</span>
+  <span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span>
+    <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
+    <span class="k">begin</span>
+      <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;GET request to the root&#39;</span><span class="p">)</span><span class="o">;</span>
+    <span class="k">end</span><span class="p">)</span><span class="o">;</span>
+	
+  <span class="n">THorse</span><span class="o">.</span><span class="n">Post</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span>
+    <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
+    <span class="k">begin</span>
+      <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;POST request to the root&#39;</span><span class="p">)</span><span class="o">;</span>
+    <span class="k">end</span><span class="p">)</span>	
+
+  <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="p">(</span><span class="mi">9000</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">.</span>
 </code></pre></div>
-Respond to POST request on the root route (/):
-<div class="highlight"><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Post</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span>
-  <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
-  <span class="k">begin</span>
-    <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Got a POST request&#39;</span><span class="p">)</span><span class="o">;</span>
-  <span class="k">end</span><span class="p">)</span><span class="o">;</span>
+<p>O Horse suporta os seguintes métodos de roteamento que correspondem aos métodos HTTP: get, post, put, patch, head, delete.</p>
+<p>Existe um método de roteamento especial,  THorse.All, que não é derivado de nenhum método HTTP. Este método é usado para carregar procedures em um caminho para todos os métodos de solicitação.</p>
+<p>No exemplo a seguir, o manipulador irá ser executado para solicitações para “/test” se você estiver usando GET, POST, PUT, DELETE, ou qualquer outro método de solicitação HTTP que é suportado pelo Horse.</p>
+<div class="highlight"><pre><span></span><code>  <span class="n">THorse</span><span class="o">.</span><span class="n">All</span><span class="p">(</span><span class="s">&#39;/test&#39;</span><span class="o">,</span>
+    <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
+    <span class="k">begin</span>
+      <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Test Response&#39;</span><span class="p">)</span><span class="o">;</span>
+    <span class="k">end</span><span class="p">)</span><span class="o">;</span>
 </code></pre></div>
-Respond to a PUT request to the /user route:
-<div class="highlight"><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Put</span><span class="p">(</span><span class="s">&#39;/user&#39;</span><span class="o">,</span>
-  <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
-  <span class="k">begin</span>
-    <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Got a PUT request at /user&#39;</span><span class="p">)</span><span class="o">;</span>
-  <span class="k">end</span><span class="p">)</span><span class="o">;</span>
-</code></pre></div>
-Respond to a DELETE request to the /user route:
-<div class="highlight"><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Delete</span><span class="p">(</span><span class="s">&#39;/user&#39;</span><span class="o">,</span>
-  <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
-  <span class="k">begin</span>
-    <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Got a DELETE request at /user&#39;</span><span class="p">)</span><span class="o">;</span>
-  <span class="k">end</span><span class="p">)</span><span class="o">;</span>
-</code></pre></div></p>
+<h1 id="metodos-de-resposta">Métodos de resposta</h1>
+<p>Os métodos do objeto de resposta (res) na seguinte tabela podem enviar uma resposta ao cliente, e finalizar o ciclo solicitação-resposta.</p>
+<p>Método | Descrição |
+Res.Download(AFileName) | Solicita que seja efetuado o download de um arquivo |
+Res.RedirectTo(ALocation) | Redireciona uma solicitação |
+Res.SendFile(AFileName) | Envia um arquivo |
+Res.Send(AContent) | Envia uma string |
+Res.Send<T: class> | Envia um objeto |
+Res.Status(AStatus) | Configura o código do status de resposta |
+Res.ContentType(AContentType) | Configura o ContentType da resposta |</p>
 
               
             </article>
@@ -358,7 +446,7 @@ Respond to a DELETE request to the /user route:
     <nav class="md-footer__inner md-grid" aria-label="Rodapé">
       
         
-        <a href="../hello-world/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Olá Mundo" rel="prev">
+        <a href="../basic-routing/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Rotas" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -367,7 +455,7 @@ Respond to a DELETE request to the /user route:
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Olá Mundo
+              Rotas
             </div>
           </div>
         </a>

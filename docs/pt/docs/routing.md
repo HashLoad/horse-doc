@@ -48,7 +48,7 @@ begin
 end.
 ```
 
-O Horse suporta os seguintes métodos de roteamento que correspondem aos métodos HTTP: get, post, put, patch, head, delete.
+O Horse suporta os seguintes métodos de roteamento que correspondem aos métodos HTTP: GET, POST, PUT, PATCH, HEAD, DELETE.
 
 Existe um método de roteamento especial,  THorse.All, que não é derivado de nenhum método HTTP. Este método é usado para carregar procedures em um caminho para todos os métodos de solicitação.
 
@@ -67,6 +67,7 @@ No exemplo a seguir, o manipulador irá ser executado para solicitações para �
 Os métodos do objeto de resposta (res) na seguinte tabela podem enviar uma resposta ao cliente, e finalizar o ciclo solicitação-resposta.
 
 Método | Descrição |
+|--------|-----------|
 Res.Download(AFileName) | Solicita que seja efetuado o download de um arquivo |
 Res.RedirectTo(ALocation) | Redireciona uma solicitação |
 Res.SendFile(AFileName) | Envia um arquivo |

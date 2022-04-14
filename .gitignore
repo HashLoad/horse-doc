@@ -1,2 +1,5 @@
 env
 build.zip
+*.htm*
+*.js
+site/

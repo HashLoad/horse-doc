@@ -10,56 +10,59 @@ First create a console project in Delphi or Lazarus, save the project with the n
 
 After Horse is created and installed in your project, include the following code:
 
-#Delphi
-``` delphi
-uses
-  System.SysUtils,
-  Horse;
+===  "Delphi"
 
-const
-    HORSE_PORT = 9000;
+    ``` delphi
+    uses
+      System.SysUtils,
+      Horse;
 
-begin
-  THorse.Get('/',
-    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+    const
+        HORSE_PORT = 9000;
+
+    begin
+      THorse.Get('/',
+        procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+        begin
+          Res.Send('Hello Word!');
+        end);
+
+      THorse.Listen(HORSE_PORT,
+        procedure(Horse: THorse)
+        begin
+          Writeln(Format('Server is running on %s:%d', [Horse.Host, Horse.Port]));
+        end)
+    end.
+    ```
+
+===  "Lazarus"
+
+    ``` delphi
+    {$MODE DELPHI}{$H+}
+
+    uses
+      SysUtils,
+      Horse;
+
+    const
+      HORSE_PORT = 9000;
+
+    procedure GetHelloWorld(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
     begin
       Res.Send('Hello Word!');
-    end);
+    end;
 
-  THorse.Listen(HORSE_PORT,
-    procedure(Horse: THorse)
+    procedure HorseListenCallback(Horse: THorse);
     begin
       Writeln(Format('Server is running on %s:%d', [Horse.Host, Horse.Port]));
-    end)
-end.
-```
+    end;
 
-#Lazarus
-``` delphi
-{$MODE DELPHI}{$H+}
+    begin
+      THorse.Get('/', GetHelloWorld);
+      THorse.Listen(HORSE_PORT, HorseListenCallback);
+    end.  
+    ```
 
-uses
-  SysUtils,
-  Horse;
-
-const
-  HORSE_PORT = 9000;
-
-procedure GetHelloWorld(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
-begin
-  Res.Send('Hello Word!');
-end;
-
-procedure HorseListenCallback(Horse: THorse);
-begin
-  Writeln(Format('Server is running on %s:%d', [Horse.Host, Horse.Port]));
-end;
-
-begin
-  THorse.Get('/', GetHelloWorld);
-  THorse.Listen(HORSE_PORT, HorseListenCallback);
-end.  
-```
 The application starts a server and listens for connections on port 9000. The application responds with a **Hello, world!** on the route **(/)** to the *client* that made the *request*. For all other paths, it will respond with a **Not Found** message and *status code* **404**
 
 Now, compile and run the application. You will have as a result on the console something like **Server is running on 0.0.0.0:9000**
@@ -68,5 +71,4 @@ Then open a browser, type http://localhost:9000/ in the address bar and browse t
 
 If you were able to view the result in your browser, this is great, your server worked correctly. Now you're ready to evolve on Horse!
 
-See more at:
- * Understanding [routing](../basic-routing.en).
+See more at: [Understanding routing](../basic-routing.en)

@@ -24,34 +24,42 @@ The following examples illustrate the definition of simple routes.
 
 Reply with "Hello World!" to whoever requested (*client* who made the *request*):
 
-``` pascal
-THorse.Get('/ping',
-  procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
-  begin
-    Res.Send('Hello World!');
-  end);
-```
-Respond to POST request on the root route (/):
-``` pascal
-THorse.Post('/',
-  procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
-  begin
-    Res.Send('Got a POST request');
-  end);
-```
-Respond to a PUT request to the /user route:
-``` pascal
-THorse.Put('/user',
-  procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
-  begin
-    Res.Send('Got a PUT request at /user');
-  end);
-```
-Respond to a DELETE request to the /user route:
-``` pascal
-THorse.Delete('/user',
-  procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
-  begin
-    Res.Send('Got a DELETE request at /user');
-  end);
-```
+===  "GET"
+
+    ``` pascal
+    THorse.Get('/ping',
+      procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+      begin
+        Res.Send('Hello World!');
+      end);
+    ```
+
+===  "POST"
+
+    ``` pascal title="Respond to POST request on the root route (/):"
+    THorse.Post('/',
+      procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+      begin
+        Res.Send('Got a POST request');
+      end);
+    ```
+
+===  "PUT"
+
+    ``` pascal title="Respond to a PUT request to the /user route"
+    THorse.Put('/user',
+      procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+      begin
+        Res.Send('Got a PUT request at /user');
+      end);
+    ```
+
+===  "DELETE"
+
+    ``` pascal title="Respond to a DELETE request to the /user route"
+    THorse.Delete('/user',
+      procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+      begin
+        Res.Send('Got a DELETE request at /user');
+      end);
+    ```

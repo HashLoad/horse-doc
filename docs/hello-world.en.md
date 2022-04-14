@@ -4,10 +4,11 @@ type: starter
 order: 1
 ---
 
-First create a console project in Delphi or Lazarus, save the project with the name you want (in this example, it will be saved as *hashload_horse*). Then install Horse as a dependency on your project, according to the [installation guide](/installation).
+First create a console project in Delphi or Lazarus, save the project with the name you want (in this example, it will be saved as *hashload_horse*). Then install Horse as a dependency on your project, according to the [installation guide](../installation.en).
 
 After Horse is created and installed in your project, include the following code:
 
+#Delphi
 ``` delphi
 uses
   System.SysUtils,
@@ -20,7 +21,7 @@ begin
   THorse.Get('/',
     procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
     begin
-      Res.Send('Olá, mundo!');
+      Res.Send('Hello Word!');
     end);
 
   THorse.Listen(HORSE_PORT,
@@ -30,18 +31,21 @@ begin
     end)
 end.
 ```
-or
+
+#Lazarus
 ``` delphi
+{$MODE DELPHI}{$H+}
+
 uses
-  System.SysUtils,
+  SysUtils,
   Horse;
 
 const
   HORSE_PORT = 9000;
 
-procedure GetHelloWorld(Req: THorseRequest; Res: THorseResponse; Next: TProc);
+procedure GetHelloWorld(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
 begin
-  Res.Send('Hello world!');
+  Res.Send('Hello Word!');
 end;
 
 procedure HorseListenCallback(Horse: THorse);
@@ -52,7 +56,7 @@ end;
 begin
   THorse.Get('/', GetHelloWorld);
   THorse.Listen(HORSE_PORT, HorseListenCallback);
-end.
+end.  
 ```
 The application starts a server and listens for connections on port 9000. The application responds with a **Hello, world!** on the route **(/)** to the *client* that made the *request*. For all other paths, it will respond with a **Not Found** message and *status code* **404**
 
@@ -63,4 +67,4 @@ Then open a browser, type http://localhost:9000/ in the address bar and browse t
 If you were able to view the result in your browser, this is great, your server worked correctly. Now you're ready to evolve on Horse!
 
 See more at:
- * Understanding [routing](/basic-routing).
+ * Understanding [routing](../basic-routing.en).

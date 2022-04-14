@@ -60,10 +60,10 @@ markdown_extensions:
 extra:
   alternate:
   - link: ./en/
-    name: en - English
+    name: English
     lang: en
   - link: ./
-    name: pt - Português
+    name: Português
     lang: pt
   social:
     - icon: fontawesome/brands/telegram

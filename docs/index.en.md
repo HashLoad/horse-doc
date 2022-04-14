@@ -10,13 +10,13 @@ order: 1
 
 ## What is Horse?
 
-Horse is a **framework** for building web applications. As the main library, it is easy to adopt and integrate with other existing libraries or projects.
+Horse is a **framework** for building web applications in Delphi and Lazarus. As the main library, it is easy to adopt and integrate with other existing libraries or projects.
 
 ## First Steps
 
 The simplest way to test Horse is by installing. Feel free to install it and accompany us with some basic examples.
 
-In the topic [Installation](/horse/installation) you will see how to install Horse.
+In the topic [Installation](installation.en) you will see how to install Horse.
 
 ## Basic Notions
 
@@ -43,6 +43,6 @@ We just created our first Horse server!
 We introduced Horse briefly - the rest of this guide will delve into other advanced features in a much greater level of detail, so read on!
 
 See more at:
- * [Installing](/installation) Horse.
- * Creating a [Hello world!](/hello-world).
- * Understanding [routing](/routing).
+ * [Installing](installation.en) Horse.
+ * Creating a [Hello world!](hello-world.en).
+ * Understanding [routing](routing.en).

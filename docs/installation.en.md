@@ -23,4 +23,4 @@ $ boss install horse
 [Download](https://github.com/HashLoad/boss/releases/latest) the latest version of Horse and include the __src/__ folder in your project's *Library Path*.
 
 See more at:
-  * Creating a [Hello world!](/hello-world).
+  * Creating a [Hello world!](../hello-world.en).

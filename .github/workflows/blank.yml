@@ -21,13 +21,12 @@ jobs:
           architecture: 'x64'
           
       - name: Install dependencies
-        run: |
-          python3 -m pip install -r requirements.txt
+        run: python3 -m pip install -r requirements.txt
           
       - name: Build site Portuguese
         working-directory: ./docs/pt
         run: mkdocs build
 
       - name: Deploy
-        working-directory: ./docs/pt
-        run: mkdocs gh-deploy
+        working-directory: ./docs/pt          
+        run: mkdocs gh-deploy -d ../

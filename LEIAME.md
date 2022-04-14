@@ -46,7 +46,7 @@ Você poderá contribuir em qualquer dos tópicos abaixo
     Revisando o conteúdo, atualizando com novos recursos
     Corrigindo erros e sugerindo alterações
 
-Acompanhe as issues abertas https://github.com/ricardodarocha/horse-mkdocs/issues
+Acompanhe as issues abertas https://github.com/HashLoad/horse-doc/issues
 Veja as línguas que carecem de tradução
 
 ## Como enriquecer as contribuições
@@ -60,5 +60,5 @@ Saiba mais. [link]
 
 ## Colocando a mão na massa
 
-Realize uma cópia do repositório fazendo **fork** https://github.com/ricardodarocha/horse-mkdocs
-Faça suas alterações e realize um Pull Request para `ricardodarocha/horse-mkdocs`
+Realize uma cópia do repositório fazendo **fork** https://github.com/HashLoad/horse-doc
+Faça suas alterações e realize um Pull Request para `HashLoad/horse-doc`

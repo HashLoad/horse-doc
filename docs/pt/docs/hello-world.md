@@ -4,7 +4,7 @@ type: iniciante
 order: 1
 ---
 
-Crie um projeto do tipo Console Application com o Delphi ou Lazarus, salve o seu projeto com o nome que você quiser (este exemplo foi salvo com o nome *hashload_horse*). Então instale o Horse e inclua nas dependências do seu projeto, de acordo com o [guia de instalação](/installation).
+Crie um projeto do tipo Console Application com o Delphi ou Lazarus, salve o seu projeto com o nome que você quiser (este exemplo foi salvo com o nome *hashload_horse*). Então instale o Horse e inclua nas dependências do seu projeto, de acordo com o [guia de instalação](installation).
 
 Após instalar o Horse e criar o seu projeto, inclua o seguinte cídigo:
 
@@ -65,4 +65,4 @@ Então abra o browser, digite http://localhost:9000/ para acessar a sua primeira
 Agora Você está pronto para desenvolver com o Horse!
 
 Próximo passo:
- * Entendendo [rotas](/basic-routing).
+ * Entendendo [rotas](basic-routing).

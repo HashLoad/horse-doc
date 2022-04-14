@@ -10,7 +10,7 @@
 
     The current page still doesn't have a translation for those languages.
 
-    But you can help translating it: [Contributing](https://github.com/ricardodarocha/horse-mkdocs){.internal-link target=_blank}.
+    But you can help translating it: [Contributing](https://github.com/HashLoad/horse-doc){.internal-link target=_blank}.
 
 Recommended Languages Tree
 

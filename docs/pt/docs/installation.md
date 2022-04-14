@@ -24,4 +24,4 @@ $ boss install horse
 [Baixe](https://github.com/HashLoad/boss/releases/latest) a versão mais nova do Horse e inclua o diretório __src/__ na sua *Library Path*.
 
 Veja mais em:
-  * Implementando um [Olá Mundo!](/hello-world).
+  * Implementando um [Olá Mundo!](hello-world).

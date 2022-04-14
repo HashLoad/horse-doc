@@ -6,7 +6,7 @@ order: 1
 
 # Horse
 
-![Horse ](horse.PNG)
+![Horse ](horse.png)
 
 ## O que é o Horse?
 

@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#delphi" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -112,7 +117,7 @@
               
                 <li class="md-select__item">
                   <a href="./" hreflang="en" class="md-select__link">
-                    en - English
+                    English
                   </a>
                 </li>
                 
@@ -265,6 +270,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Hello world!
@@ -344,6 +351,24 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -351,14 +376,13 @@
                 
 
 
-  <h1>Hello world!</h1>
-
 <ul>
 <li class="i18n-link i18n-link-found i18n-link-pt"><a href="../hello-world/">Português</a></li>
 </ul>
-<p>First create a console project in Delphi or Lazarus, save the project with the name you want (in this example, it will be saved as <em>hashload_horse</em>). Then install Horse as a dependency on your project, according to the <a href="/installation">installation guide</a>.</p>
+<p>First create a console project in Delphi or Lazarus, save the project with the name you want (in this example, it will be saved as <em>hashload_horse</em>). Then install Horse as a dependency on your project, according to the <a href="../installation.en">installation guide</a>.</p>
 <p>After Horse is created and installed in your project, include the following code:</p>
-<p><div class="highlight"><pre><span></span><code><span class="k">uses</span>
+<h1 id="delphi">Delphi</h1>
+<div class="highlight"><pre><span></span><code><span class="k">uses</span>
   <span class="n">System</span><span class="o">.</span><span class="n">SysUtils</span><span class="o">,</span>
   <span class="n">Horse</span><span class="o">;</span>
 
@@ -369,7 +393,7 @@
   <span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span>
     <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
     <span class="k">begin</span>
-      <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Olá, mundo!&#39;</span><span class="p">)</span><span class="o">;</span>
+      <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Hello Word!&#39;</span><span class="p">)</span><span class="o">;</span>
     <span class="k">end</span><span class="p">)</span><span class="o">;</span>
 
   <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="p">(</span><span class="n">HORSE_PORT</span><span class="o">,</span>
@@ -379,17 +403,19 @@
     <span class="k">end</span><span class="p">)</span>
 <span class="k">end</span><span class="o">.</span>
 </code></pre></div>
-or
-<div class="highlight"><pre><span></span><code><span class="k">uses</span>
-  <span class="n">System</span><span class="o">.</span><span class="n">SysUtils</span><span class="o">,</span>
+<h1 id="lazarus">Lazarus</h1>
+<p><div class="highlight"><pre><span></span><code><span class="cm">{$MODE DELPHI}{$H+}</span>
+
+<span class="k">uses</span>
+  <span class="n">SysUtils</span><span class="o">,</span>
   <span class="n">Horse</span><span class="o">;</span>
 
 <span class="k">const</span>
   <span class="n">HORSE_PORT</span> <span class="o">=</span> <span class="mi">9000</span><span class="o">;</span>
 
-<span class="k">procedure</span> <span class="nf">GetHelloWorld</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span><span class="o">;</span>
+<span class="k">procedure</span> <span class="nf">GetHelloWorld</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TNextProc</span><span class="p">)</span><span class="o">;</span>
 <span class="k">begin</span>
-  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Hello world!&#39;</span><span class="p">)</span><span class="o">;</span>
+  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Hello Word!&#39;</span><span class="p">)</span><span class="o">;</span>
 <span class="k">end</span><span class="o">;</span>
 
 <span class="k">procedure</span> <span class="nf">HorseListenCallback</span><span class="p">(</span><span class="n">Horse</span><span class="o">:</span> <span class="n">THorse</span><span class="p">)</span><span class="o">;</span>
@@ -400,14 +426,14 @@ or
 <span class="k">begin</span>
   <span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span> <span class="n">GetHelloWorld</span><span class="p">)</span><span class="o">;</span>
   <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="p">(</span><span class="n">HORSE_PORT</span><span class="o">,</span> <span class="n">HorseListenCallback</span><span class="p">)</span><span class="o">;</span>
-<span class="k">end</span><span class="o">.</span>
+<span class="k">end</span><span class="o">.</span>  
 </code></pre></div>
 The application starts a server and listens for connections on port 9000. The application responds with a <strong>Hello, world!</strong> on the route <strong>(/)</strong> to the <em>client</em> that made the <em>request</em>. For all other paths, it will respond with a <strong>Not Found</strong> message and <em>status code</em> <strong>404</strong></p>
 <p>Now, compile and run the application. You will have as a result on the console something like <strong>Server is running on 0.0.0.0:9000</strong></p>
 <p>Then open a browser, type http://localhost:9000/ in the address bar and browse to view the output.</p>
 <p>If you were able to view the result in your browser, this is great, your server worked correctly. Now you're ready to evolve on Horse!</p>
 <p>See more at:
- * Understanding <a href="/basic-routing">routing</a>.</p>
+ * Understanding <a href="../basic-routing.en">routing</a>.</p>
 
               
             </article>

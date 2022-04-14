@@ -10,56 +10,59 @@ Crie um projeto do tipo Console Application com o Delphi ou Lazarus, salve o seu
 
 Após instalar o Horse e criar o seu projeto, inclua o seguinte código:
 
-#Delphi
-``` delphi
-uses
-  System.SysUtils,
-  Horse;
+===  "Delphi"
 
-const
-    HORSE_PORT = 9000;
+    ``` delphi
+    uses 
+      System.SysUtils, 
+      Horse;
 
-begin
-  THorse.Get('/',
-    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+    const
+        HORSE_PORT = 9000;
+
     begin
-      Res.Send('Olá, mundo!');
-    end);
+      THorse.Get('/',
+        procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+        begin
+          Res.Send('Olá, mundo!');
+        end);
 
-  THorse.Listen(HORSE_PORT,
-    procedure(Horse: THorse)
+      THorse.Listen(HORSE_PORT,
+        procedure(Horse: THorse)
+        begin
+          Writeln(Format('O servidor está rodando em %s:%d', [Horse.Host, Horse.Port]));
+        end)
+    end.
+    ```
+
+===  "Lazarus"
+
+    ``` delphi
+    {$MODE DELPHI}{$H+}
+
+    uses
+      SysUtils,
+      Horse;
+
+    const
+      HORSE_PORT = 9000;
+
+    procedure GetHelloWorld(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
     begin
-      Writeln(Format('O servidor está rodando em %s:%d', [Horse.Host, Horse.Port]));
-    end)
-end.
-```
+      Res.Send('Ola Mundo!');
+    end;
 
-#Lazarus
-``` delphi
-{$MODE DELPHI}{$H+}
+    procedure HorseListenCallback(Horse: THorse);
+    begin
+      Writeln(Format('O servidor esta rodando em %s:%d', [Horse.Host, Horse.Port]));
+    end;
 
-uses
-  SysUtils,
-  Horse;
+    begin
+      THorse.Get('/', GetHelloWorld);
+      THorse.Listen(HORSE_PORT, HorseListenCallback);
+    end. 
+    ```
 
-const
-  HORSE_PORT = 9000;
-
-procedure GetHelloWorld(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
-begin
-  Res.Send('Ola Mundo!');
-end;
-
-procedure HorseListenCallback(Horse: THorse);
-begin
-  Writeln(Format('O servidor esta rodando em %s:%d', [Horse.Host, Horse.Port]));
-end;
-
-begin
-  THorse.Get('/', GetHelloWorld);
-  THorse.Listen(HORSE_PORT, HorseListenCallback);
-end.  
-```
 A aplicação irá iniciar um servidor escutando na porta 9000.
 
 Agora, compile e rode a aplicação. Você verá no console a mensagem **Servidor rodando em 0.0.0.0:9000**
@@ -70,5 +73,4 @@ Então abra o browser, digite http://localhost:9000/ para acessar a sua primeira
 
 Agora Você está pronto para desenvolver com o Horse!
 
-Próximo passo:
- * Entendendo [rotas](../basic-routing).
+Próximo passo: [Entendendo rotas](../basic-routing)

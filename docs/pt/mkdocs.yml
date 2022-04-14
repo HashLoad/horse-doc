@@ -62,4 +62,6 @@ nav:
 - Bem vindo: index.md
 - Instalação: installation.md
 - Olá Mundo: hello-world.md
-- Rotas: routing.md
+- Rotas: basic-routing.md
+- Guia:
+  - 'Roteamento': 'routing.md'

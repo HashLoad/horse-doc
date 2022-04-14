@@ -17,7 +17,7 @@ $ boss init
 $ boss install horse
 ```
 
-*NOTE: it is worth mentioning that the command `boss init` is to initialize the dependency manager and must be executed only once. If you have already done so, there is no need to do it again.*
+*NOTA: O comando `boss init` serve para inicializar o gerenciador de dependências e deve ser executado apenas uma vez. Se você já fez isso, não há necessidade de fazê-lo novamente.*
 
 ### Manual
 

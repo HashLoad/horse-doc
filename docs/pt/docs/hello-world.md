@@ -32,27 +32,29 @@ end.
 ```
 ou
 ``` delphi
+{$MODE DELPHI}{$H+}
+
 uses
-  System.SysUtils,
+  SysUtils,
   Horse;
 
 const
   HORSE_PORT = 9000;
 
-procedure GetHelloWorld(Req: THorseRequest; Res: THorseResponse; Next: TProc);
+procedure GetHelloWorld(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
 begin
-  Res.Send('Olá Mundo!');
+  Res.Send('Ola Mundo!');
 end;
 
 procedure HorseListenCallback(Horse: THorse);
 begin
-  Writeln(Format('O servidor está rodando em %s:%d', [Horse.Host, Horse.Port]));
+  Writeln(Format('O servidor esta rodando em %s:%d', [Horse.Host, Horse.Port]));
 end;
 
 begin
   THorse.Get('/', GetHelloWorld);
   THorse.Listen(HORSE_PORT, HorseListenCallback);
-end.
+end.  
 ```
 A aplicação irá iniciar um servidor escutando na porta 9000.
 
@@ -65,4 +67,4 @@ Então abra o browser, digite http://localhost:9000/ para acessar a sua primeira
 Agora Você está pronto para desenvolver com o Horse!
 
 Próximo passo:
- * Entendendo [rotas](../routing).
+ * Entendendo [rotas](../basic-routing).

@@ -1,57 +1,76 @@
 ---
-title: Basic Routing
-type: starter
-order: 1
+title: Roteamento
 ---
 
-Rotas determinam como a aplicação responderá a uma requisição do *cliente* em um caminho específico chamado *endpoint*, que é uma URI que especifica um método do protocolo HTTP (POST, PUT, GET, DELETE e além).
+#Roteamento
 
-Cada rota pode ter mais de um tratamento, que responderá de acordo com a requisição correspondente.
+O Roteamento é o mecanismo pelo qual as requisições são direcionadas para o código que as trata. Para obter uma introdução a roteamento, consulte [Roteamento básico](../basic-routing).
 
-Uma rota possui a seguinte estrutura
+O código a seguir é um exemplo de uma rota muito básica.
 
 ``` delphi
-  THorse.METHOD(PATH, HANDLER);
+uses Horse;
+
+begin
+  THorse.Get('/ping',
+    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+    begin
+      Res.Send('pong');
+    end);
+
+  THorse.Listen(9000);
+end.
 ```
 
-Onde:
+#Métodos de roteamento
 
-* `METHOD` é um método HTTP.
-* `PATH` é o caminho no servidor.
-* `HANDLER` é um método do delphi (procedure) quando esta rota for acessada.
+Um método de roteamento é derivado a partir de um dos métodos HTTP, e é anexado a uma procedure que irá tratar esta requisição.
 
-Os exemplos a seguir ilustram a definição de rotas simples
+o código a seguir é um exemplo de rotas para a raiz do aplicativo que estão definidas para os métodos GET e POST.
 
-Reply with "Hello World!" to whoever requested (*client* who made the *request*):
+``` delphi
+uses Horse;
 
-``` pascal
-THorse.Get('/ping',
-  procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
-  begin
-    Res.Send('Hello World!');
-  end);
+begin
+  THorse.Get('/',
+    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+    begin
+      Res.Send('GET request to the root');
+    end);
+	
+  THorse.Post('/',
+    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+    begin
+      Res.Send('POST request to the root');
+    end)	
+
+  THorse.Listen(9000);
+end.
 ```
-Respond to POST request on the root route (/):
-``` pascal
-THorse.Post('/',
-  procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
-  begin
-    Res.Send('Got a POST request');
-  end);
+
+O Horse suporta os seguintes métodos de roteamento que correspondem aos métodos HTTP: get, post, put, patch, head, delete.
+
+Existe um método de roteamento especial,  THorse.All, que não é derivado de nenhum método HTTP. Este método é usado para carregar procedures em um caminho para todos os métodos de solicitação.
+
+No exemplo a seguir, o manipulador irá ser executado para solicitações para “/test” se você estiver usando GET, POST, PUT, DELETE, ou qualquer outro método de solicitação HTTP que é suportado pelo Horse.
+
+``` delphi
+  THorse.All('/test',
+    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+    begin
+      Res.Send('Test Response');
+    end);
 ```
-Respond to a PUT request to the /user route:
-``` pascal
-THorse.Put('/user',
-  procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
-  begin
-    Res.Send('Got a PUT request at /user');
-  end);
-```
-Respond to a DELETE request to the /user route:
-``` pascal
-THorse.Delete('/user',
-  procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
-  begin
-    Res.Send('Got a DELETE request at /user');
-  end);
-```
+
+#Métodos de resposta
+
+Os métodos do objeto de resposta (res) na seguinte tabela podem enviar uma resposta ao cliente, e finalizar o ciclo solicitação-resposta.
+
+Método | Descrição |
+Res.Download(AFileName) | Solicita que seja efetuado o download de um arquivo |
+Res.RedirectTo(ALocation) | Redireciona uma solicitação |
+Res.SendFile(AFileName) | Envia um arquivo |
+Res.Send(AContent) | Envia uma string |
+Res.Send<T: class> | Envia um objeto |
+Res.Status(AStatus) | Configura o código do status de resposta |
+Res.ContentType(AContentType) | Configura o ContentType da resposta |

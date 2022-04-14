@@ -43,4 +43,4 @@ Esta é apenas uma breve introdução do Horse. Continue o guia para se aprofund
 Veja mais:
  * [Instalando](installation) Horse.
  * Implementando um [Olá mundo!](hello-world).
- * Entendendo [rotas](routing).
+ * Entendendo [rotas](basic-routing).

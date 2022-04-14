@@ -14,7 +14,7 @@ Horse é um **framework** para aplicações web. Fácil de ser adotada e integra
 
 ## Primeiros passos
 
-A melhor maneira de obter o Horse é acessando a nossa [Página de instalação](/installation). 
+A melhor maneira de obter o Horse é acessando a nossa [Página de instalação](installation). 
 
 ## Noções básicas
 
@@ -41,6 +41,6 @@ E nós já criamos nosso primeiro servidor!
 Esta é apenas uma breve introdução do Horse. Continue o guia para se aprofundar em um maior número de detalhes. Então vamos lá!
 
 Veja mais:
- * [Instalando](/installation) Horse.
- * Implementando um [Olá mundo!](/hello-world).
- * Entendendo [rotas](/routing).
+ * [Instalando](installation) Horse.
+ * Implementando um [Olá mundo!](hello-world).
+ * Entendendo [rotas](routing).

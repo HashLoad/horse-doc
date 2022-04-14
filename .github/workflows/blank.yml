@@ -28,4 +28,5 @@ jobs:
         run: mkdocs build
 
       - name: Deploy
-        run: cd .. && mkdocs gh-deploy --config-file ../docs/pt/mkdocs.yml --remote-branch master        
+        working-directory: ./docs/pt
+        run: cd .. && mkdocs gh-deploy      

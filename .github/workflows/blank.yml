@@ -29,4 +29,4 @@ jobs:
 
       - name: Deploy
         working-directory: ./docs/pt
-        run: cd .. && mkdocs gh-deploy      
+        run: mkdocs gh-deploy      

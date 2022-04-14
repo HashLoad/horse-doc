@@ -6,8 +6,9 @@ order: 1
 
 Crie um projeto do tipo Console Application com o Delphi ou Lazarus, salve o seu projeto com o nome que você quiser (este exemplo foi salvo com o nome *hashload_horse*). Então instale o Horse e inclua nas dependências do seu projeto, de acordo com o [guia de instalação](../installation).
 
-Após instalar o Horse e criar o seu projeto, inclua o seguinte cídigo:
+Após instalar o Horse e criar o seu projeto, inclua o seguinte código:
 
+#Delphi
 ``` delphi
 uses
   System.SysUtils,
@@ -30,7 +31,7 @@ begin
     end)
 end.
 ```
-ou
+#Lazarus
 ``` delphi
 {$MODE DELPHI}{$H+}
 

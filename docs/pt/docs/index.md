@@ -10,7 +10,7 @@ order: 1
 
 ## O que é o Horse?
 
-Horse é um **framework** para aplicações web. Fácil de ser adotada e integrada com outras bibliotecas ou projetos.
+Horse é um **framework** para aplicações web compatível com Delphi e Lazarus. Fácil de ser adotada e integrada com outras bibliotecas ou projetos.
 
 ## Primeiros passos
 

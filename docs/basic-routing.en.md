@@ -6,9 +6,6 @@ order: 1
 
 Routing determines how the application will respond to a request from a *client* at an *endpoint*, which would be the URI and a specific method of the HTTP protocol (POST, PUT, GET, DELETE and so on).
 
-*[URI]: Uniform Resource Identifier
-*[HTTP]: Hypertext Transfer Protocol
-
 On the route, it is possible to have more than one treatment, which will be executed when the route that was requested is the corresponding one.
 
 The route has the following structure:
@@ -66,3 +63,4 @@ Reply with "Hello World!" to whoever requested (*client* who made the *request*)
         Res.Send('Got a DELETE request at /user');
       end);
     ```
+--8<-- "includes/abbreviations.md"

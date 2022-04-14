@@ -25,3 +25,5 @@ $ boss install horse
 
 Veja mais em:
   * Implementando um [Olá Mundo!](../hello-world).
+
+--8<-- "includes/abbreviations.md"

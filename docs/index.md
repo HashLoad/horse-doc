@@ -44,3 +44,6 @@ Veja mais:
  * [Instalando](installation) Horse.
  * Implementando um [Olá mundo!](hello-world).
  * Entendendo [rotas](basic-routing).
+
+
+--8<-- "includes/abbreviations.md"

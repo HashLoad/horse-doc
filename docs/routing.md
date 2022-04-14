@@ -75,3 +75,5 @@ Res.Send(AContent) | Envia uma string |
 Res.Send<T: class> | Envia um objeto |
 Res.Status(AStatus) | Configura o código do status de resposta |
 Res.ContentType(AContentType) | Configura o ContentType da resposta |
+
+--8<-- "includes/abbreviations.md"

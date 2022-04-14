@@ -68,3 +68,5 @@ Reply with "Hello World!" to whoever requested (*client* who made the *request*)
     ```
 
 *NOTA: A versão atual do [Lazarus 3.2.2](https://www.lazarus-ide.org/index.php?page=downloads) não tem suporte a métodos anônimos, veja o exemplo em [Olá Mundo](../hello-world) de como informar o callback no Lazarus*
+
+--8<-- "includes/abbreviations.md"

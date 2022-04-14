@@ -30,11 +30,3 @@ jobs:
       - name: Deploy
         working-directory: ./docs/pt
         run: mkdocs gh-deploy -d ./public 
-
-      - name: Build site English
-        working-directory: ./docs/en
-        run: mkdocs build
-
-      - name: Deploy
-        working-directory: ./docs/en
-        run: mkdocs gh-deploy -d ./public/en

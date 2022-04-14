@@ -65,4 +65,4 @@ Então abra o browser, digite http://localhost:9000/ para acessar a sua primeira
 Agora Você está pronto para desenvolver com o Horse!
 
 Próximo passo:
- * Entendendo [rotas](../basic-routing).
+ * Entendendo [rotas](../routing).

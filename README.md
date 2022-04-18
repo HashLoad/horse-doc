@@ -1,4 +1,5 @@
 # horse-mkdocs
+
 This is a how-to document Horse based on mkdocs (Python)
 
 Check out the **pt-br** readme version on [leiame.md](LEIAME.md)
@@ -19,15 +20,14 @@ Then generate the virtual **env** with following script.
 ```shell
 #On Windows
 >virtualenv venv
->"venv/Scripts/>activate.bat" 
+>"venv/Scripts/>activate.bat"
 
 >(venv) pip install -r requirements.txt
->(venv) cd docs/pt/ #Choose the translation you want working on
 >(venv) mkdocs serve -a localhost:8082
 ```
 
 !!! This setup just allows you to work with one translation per time
-I did not solve thid translation feature at all, feel free to share if you have any suggestion. 
+I did not solve thid translation feature at all, feel free to share if you have any suggestion.
 
 It will show a tag **(venv)** on left side of the console, indicating that the virtual **env** is activated.
 At this point, the documentation server should be running on port 8082.
@@ -46,15 +46,15 @@ The application will install all python packages into the same default folder th
 
 ## How to build
 
-Before you contribute acess owr [Conduct Guide] 
+Before you contribute acess owr [Conduct Guide]
 Any help is welcome:
-    Creating a translation
-    Solving issues
-    Creating new pages with new topics
-    Includding links and references to tutoriais and articles (no comercial content allowed)
-    Reviewing the pages
-    Repairing bugs or suggesting new approachs
-    etc..
+Creating a translation
+Solving issues
+Creating new pages with new topics
+Includding links and references to tutoriais and articles (no comercial content allowed)
+Reviewing the pages
+Repairing bugs or suggesting new approachs
+etc..
 
 Take a look at oppened issues https://github.com/HashLoad/horse-doc/issues
 Check out the languages that was not translated yet
@@ -66,7 +66,7 @@ Format code as code [link]
 Generate images PNG or Gifs [link]  
 Create diagrams with https://mermaid-js.github.io/mermaid/ [link]  
 Use advanced features of mk-docs [link]  
-See more. [link]  
+See more. [link]
 
 ## Let starting
 
@@ -75,8 +75,8 @@ Give your contrubution and create a Pull Request for `HashLoad/horse-doc`
 
 ## Todo list
 
-[ ] Write the [Conduct Guide]   
+[ ] Write the [Conduct Guide]  
 [ ] Write tutorials how to create documentation  
-[ ] a) Create diagrams with https://mermaid-js.github.io/mermaid/ [link]   
-[ ] b) Use advanced features of mk-docs [link]    
-[ ] c) Working with openned issues [link]    
+[ ] a) Create diagrams with https://mermaid-js.github.io/mermaid/ [link]  
+[ ] b) Use advanced features of mk-docs [link]  
+[ ] c) Working with openned issues [link]

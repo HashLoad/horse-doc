@@ -1,4 +1,5 @@
 # horse-mkdocs
+
 Projeto da documentação do Horse baseada no mkdocs (Python)
 
 Para a criação desta documentação foi utilizada a versão do python 3.6 (ou mais recente)
@@ -14,10 +15,9 @@ Em seguida utilize o cmd para criar seu ambiente virtual, e instalar os requisit
 ```shell
 #On Windows
 >virtualenv venv
->"venv/Scripts/>activate.bat" 
+>"venv/Scripts/>activate.bat"
 
 >(venv) pip install -r requirements.txt
->(venv) cd docs/pt/ #Escolha a tradução que você está trabalhando
 >(venv) mkdocs serve -a localhost:8082
 ```
 
@@ -38,13 +38,13 @@ A aplicação irá instalar os pacotes na sua pasta padrão do python
 
 ## Como contribuir
 
-Antes de contribuir acesse o nosso [Guia de conduta] 
+Antes de contribuir acesse o nosso [Guia de conduta]
 Você poderá contribuir em qualquer dos tópicos abaixo
-    Criando uma tradução
-    Criando novas páginas com novos assuntos
-    Incluindo links para tutoriais e artigos (sem fins lucrativos)
-    Revisando o conteúdo, atualizando com novos recursos
-    Corrigindo erros e sugerindo alterações
+Criando uma tradução
+Criando novas páginas com novos assuntos
+Incluindo links para tutoriais e artigos (sem fins lucrativos)
+Revisando o conteúdo, atualizando com novos recursos
+Corrigindo erros e sugerindo alterações
 
 Acompanhe as issues abertas https://github.com/HashLoad/horse-doc/issues
 Veja as línguas que carecem de tradução

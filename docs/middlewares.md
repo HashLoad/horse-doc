@@ -56,73 +56,73 @@ Esta é uma lista de middlewares que são criados pela comunidade Horse. Se voc�
 
 O Jhonson([horse/json](https://github.com/HashLoad/jhonson)) usado para adicionar a compatibilidade com o JSON, pode ser usado da seguinte forma:
 
-### ⚡️ Uso no Delphi:
+=== "Delphi"
 
-```delphi
-uses
-  Horse,
-  Horse.Jhonson, // It's necessary to use the unit
-  System.JSON;
+    ```delphi
+    uses
+      Horse,
+      Horse.Jhonson, // It's necessary to use the unit
+      System.JSON;
 
-begin
-  // It's necessary to add the middleware in the Horse:
-  THorse.Use(Jhonson());
+    begin
+      // It's necessary to add the middleware in the Horse:
+      THorse.Use(Jhonson());
 
-  // You can specify the charset when adding middleware to the Horse:
-  // THorse.Use(Jhonson('UTF-8'));
+      // You can specify the charset when adding middleware to the Horse:
+      // THorse.Use(Jhonson('UTF-8'));
 
-  THorse.Post('/ping',
-    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+      THorse.Post('/ping',
+        procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+        var
+          LBody: TJSONObject;
+        begin
+          // Req.Body gives access to the content of the request in string format.
+          // Using jhonson middleware, we can get the content of the request in JSON format.
+
+          LBody := Req.Body<TJSONObject>;
+          Res.Send<TJSONObject>(LBody);
+        end);
+
+      THorse.Listen(9000);
+    end;
+    ```
+
+=== "Lazarus"
+
+    ```pascal
+    {$MODE DELPHI}{$H+}
+
+    uses
+      {$IFDEF UNIX}{$IFDEF UseCThreads}
+      cthreads,
+      {$ENDIF}{$ENDIF}
+      Horse,
+      Horse.Jhonson, // It's necessary to use the unit
+      fpjson,
+      SysUtils;
+
+    procedure PostPing(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
     var
       LBody: TJSONObject;
     begin
       // Req.Body gives access to the content of the request in string format.
       // Using jhonson middleware, we can get the content of the request in JSON format.
-
       LBody := Req.Body<TJSONObject>;
       Res.Send<TJSONObject>(LBody);
-    end);
+    end;
 
-  THorse.Listen(9000);
-end;
-```
+    begin
+      // It's necessary to add the middleware in the Horse:
+      THorse.Use(Jhonson);
 
-### ⚡️ Uso no Lazarus:
+      // You can specify the charset when adding middleware to the Horse:
+      // THorse.Use(Jhonson('UTF-8'));
 
-```pascal
-{$MODE DELPHI}{$H+}
+      THorse.Post('/ping', PostPing);
 
-uses
-  {$IFDEF UNIX}{$IFDEF UseCThreads}
-  cthreads,
-  {$ENDIF}{$ENDIF}
-  Horse,
-  Horse.Jhonson, // It's necessary to use the unit
-  fpjson,
-  SysUtils;
-
-procedure PostPing(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
-var
-  LBody: TJSONObject;
-begin
-  // Req.Body gives access to the content of the request in string format.
-  // Using jhonson middleware, we can get the content of the request in JSON format.
-  LBody := Req.Body<TJSONObject>;
-  Res.Send<TJSONObject>(LBody);
-end;
-
-begin
-  // It's necessary to add the middleware in the Horse:
-  THorse.Use(Jhonson);
-
-  // You can specify the charset when adding middleware to the Horse:
-  // THorse.Use(Jhonson('UTF-8'));
-
-  THorse.Post('/ping', PostPing);
-
-  THorse.Listen(9000);
-end.
-```
+      THorse.Listen(9000);
+    end.
+    ```
 
 ## ⚠️ Avisos
 

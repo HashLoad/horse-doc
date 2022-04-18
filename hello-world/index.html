@@ -247,6 +247,34 @@
 
   
   
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Introdução
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Introdução" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Introdução
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
   
     <li class="md-nav__item">
       <a href="../installation/" class="md-nav__link">
@@ -255,11 +283,10 @@
     </li>
   
 
-    
-      
-      
-      
-
+            
+          
+            
+              
   
   
     
@@ -273,18 +300,48 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Olá mundo!
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Olá mundo!
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#simplificando" class="md-nav__link">
+    Simplificando
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
-    
-      
-      
-      
-
+            
+          
+            
+              
   
   
   
@@ -292,6 +349,13 @@
       <a href="../basic-routing/" class="md-nav__link">
         Roteamento Básico
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -307,18 +371,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_5">
+        <label class="md-nav__link" for="__nav_3">
           Guia
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Guia" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Guia
         </label>
@@ -364,6 +428,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#simplificando" class="md-nav__link">
+    Simplificando
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -380,8 +459,8 @@
 <li class="i18n-link i18n-link-found i18n-link-en"><a href="../hello-world.en/">English</a></li>
 </ul>
 <h1 id="ola-mundo">Olá mundo!</h1>
-<p>Crie um projeto do tipo Console Application com o Delphi ou Lazarus, salve o seu projeto com o nome que você quiser (este exemplo foi salvo com o nome <em>hashload_horse</em>). Então instale o Horse e inclua nas dependências do seu projeto, de acordo com o <a href="../installation">guia de instalação</a>.</p>
-<p>Após instalar o Horse e criar o seu projeto, inclua o seguinte código:</p>
+<p>Independente da IDE que estiver utilizando, crie um projeto do tipo <code>Console Application</code> e salve o projeto com o nome que você quiser. Após salvar o projeto, siga o 
+<a href="../installation">guia de instalação</a> para instalar o Horse na sua aplicação. Após criar o seu projeto e instalar o Horse, inclua o seguinte código em sua aplicação:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Delphi</label><label for="__tabbed_1_2">Lazarus</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -403,7 +482,7 @@
     <span class="k">procedure</span><span class="p">(</span><span class="n">Horse</span><span class="o">:</span> <span class="n">THorse</span><span class="p">)</span>
     <span class="k">begin</span>
       <span class="nb">Writeln</span><span class="p">(</span><span class="nb">Format</span><span class="p">(</span><span class="s">&#39;O servidor está rodando em %s:%d&#39;</span><span class="o">,</span> <span class="p">[</span><span class="n">Horse</span><span class="o">.</span><span class="n">Host</span><span class="o">,</span> <span class="n">Horse</span><span class="o">.</span><span class="n">Port</span><span class="p">]))</span><span class="o">;</span>
-    <span class="k">end</span><span class="p">)</span>
+    <span class="k">end</span><span class="p">)</span><span class="o">;</span>
 <span class="k">end</span><span class="o">.</span>
 </code></pre></div>
 </div>
@@ -436,11 +515,46 @@
 </div>
 </div>
 <p>A aplicação irá iniciar um servidor escutando na porta 9000.</p>
-<p>Agora, compile e rode a aplicação. Você verá no console a mensagem <strong>Servidor rodando em 0.0.0.0:9000</strong></p>
-<p>A Aplicação irá responder com a mensagem "Olá Mundo" na rota <strong>(/)</strong> para o <em>cliente</em> que fizer a <em>requisição</em>. Para qualquer outra rota, ela irá responder com uma mensagem <strong>Not Found</strong> e <em>status code</em> <strong>404</strong> (Não encontrado)</p>
+<p>Agora, compile e rode a aplicação. Você verá no console a seguinte mensagem: <strong>Servidor rodando em 0.0.0.0:9000</strong></p>
+<p>A Aplicação irá responder com a mensagem "Olá Mundo" na rota <strong>(/)</strong> para o <em>cliente</em> que fizer a <em>requisição</em>. Para qualquer outra rota, ela irá responder com uma mensagem "Not Found" e <em>status code</em> 404 (Não encontrado)</p>
 <p>Então abra o browser, digite http://localhost:9000/ para acessar a sua primeira rota.</p>
-<p>Agora Você está pronto para desenvolver com o Horse!</p>
-<p>Próximo passo: <a href="../basic-routing">Entendendo rotas</a></p>
+<h2 id="simplificando">Simplificando</h2>
+<p>Caso não tenha necessidade de printar alguma mensagem no console, ou então não quer alterar a porta padrão utilizada pelo Horse, pode simplificar ainda mais o código, deixando da seguinte forma:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Delphi</label><label for="__tabbed_2_2">Lazarus</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="k">uses</span> <span class="n">Horse</span><span class="o">;</span>
+
+<span class="k">begin</span>
+  <span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span>
+    <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
+    <span class="k">begin</span>
+      <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Olá, mundo!&#39;</span><span class="p">)</span><span class="o">;</span>
+    <span class="k">end</span><span class="p">)</span><span class="o">;</span>
+
+  <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="o">;</span>
+<span class="k">end</span><span class="o">.</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="cm">{$MODE DELPHI}{$H+}</span>
+
+<span class="k">uses</span> <span class="n">Horse</span><span class="o">;</span>
+
+<span class="k">procedure</span> <span class="nf">GetHelloWorld</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TNextProc</span><span class="p">)</span><span class="o">;</span>
+<span class="k">begin</span>
+  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Ola Mundo!&#39;</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+
+<span class="k">begin</span>
+  <span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span> <span class="n">GetHelloWorld</span><span class="p">)</span><span class="o">;</span>
+  <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="o">;</span>
+<span class="k">end</span><span class="o">.</span> 
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>Pronto! Agora você está hápto para trabalhar com o Horse...</p>
 
               
             </article>

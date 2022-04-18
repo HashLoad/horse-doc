@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#estrutura" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -242,6 +247,34 @@
 
   
   
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Introdução
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Introdução" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Introdução
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
   
     <li class="md-nav__item">
       <a href="../installation/" class="md-nav__link">
@@ -250,11 +283,10 @@
     </li>
   
 
-    
-      
-      
-      
-
+            
+          
+            
+              
   
   
   
@@ -265,11 +297,10 @@
     </li>
   
 
-    
-      
-      
-      
-
+            
+          
+            
+              
   
   
     
@@ -281,10 +312,53 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Roteamento Básico
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Roteamento Básico
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura" class="md-nav__link">
+    Estrutura
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplos" class="md-nav__link">
+    Exemplos
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -300,18 +374,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_5">
+        <label class="md-nav__link" for="__nav_3">
           Guia
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Guia" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Guia
         </label>
@@ -344,6 +418,44 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura" class="md-nav__link">
+    Estrutura
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplos" class="md-nav__link">
+    Exemplos
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -358,54 +470,115 @@
 </ul>
 <p>Rotas determinam como a aplicação responderá a uma requisição do <em>cliente</em> em um caminho específico chamado <em>endpoint</em>, que é uma <a href="https://pt.wikipedia.org/wiki/URI"><abbr title="Uniform Resource Identifier">URI</abbr></a> que especifica um método do protocolo <abbr title="Hypertext Transfer Protocol">HTTP</abbr> (POST, PUT, GET, DELETE e além).</p>
 <p>Cada rota pode ter mais de um tratamento, que responderá de acordo com a requisição correspondente.</p>
-<p>Uma rota possui a seguinte estrutura</p>
+<h2 id="estrutura">Estrutura</h2>
+<p>Uma rota possui a seguinte estrutura:</p>
 <div class="highlight"><pre><span></span><code>  <span class="n">THorse</span><span class="o">.</span><span class="n">METHOD</span><span class="p">(</span><span class="n">PATH</span><span class="o">,</span> <span class="n">HANDLER</span><span class="p">)</span><span class="o">;</span>
 </code></pre></div>
 <p>Onde:</p>
 <ul>
-<li><code>METHOD</code> é um método <abbr title="Hypertext Transfer Protocol">HTTP</abbr>.</li>
-<li><code>PATH</code> é o caminho no servidor.</li>
-<li><code>HANDLER</code> é um método do delphi (procedure) quando esta rota for acessada.</li>
+<li><code>THorse</code> é a instancia atual do Horse;</li>
+<li><code>METHOD</code> é um método do protocolo <abbr title="Hypertext Transfer Protocol">HTTP</abbr>;</li>
+<li><code>PATH</code> é um caminho no servidor;</li>
+<li><code>HANDLER</code> é a função que será executada quando a rota for acessada;</li>
 </ul>
-<p>Os exemplos a seguir ilustram a definição de rotas simples</p>
-<p>Reply with "Hello World!" to whoever requested (<em>client</em> who made the <em>request</em>):</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">GET</label><label for="__tabbed_1_2">POST</label><label for="__tabbed_1_3">PUT</label><label for="__tabbed_1_4">DELETE</label></div>
+<h2 id="exemplos">Exemplos</h2>
+<p>Os exemplos a seguir ilustram a definição de rotas simples:</p>
+<p>Responder a uma requisição GET para a rota <code>/users</code>:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Delphi</label><label for="__tabbed_1_2">Lazarus</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><span class="filename">Respond to GET request to the /ping route:</span><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/ping&#39;</span><span class="o">,</span>
-<span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
-<span class="k">begin</span>
-  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Hello World!&#39;</span><span class="p">)</span><span class="o">;</span>
-<span class="k">end</span><span class="p">)</span><span class="o">;</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><span class="filename">Respond to POST request on the root route (/):</span><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Post</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span>
-<span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
-<span class="k">begin</span>
-  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Got a POST request&#39;</span><span class="p">)</span><span class="o">;</span>
-<span class="k">end</span><span class="p">)</span><span class="o">;</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><span class="filename">Respond to a PUT request to the /user route</span><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Put</span><span class="p">(</span><span class="s">&#39;/user&#39;</span><span class="o">,</span>
+<div class="highlight"><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/users&#39;</span><span class="o">,</span>
   <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
   <span class="k">begin</span>
-    <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Got a PUT request at /user&#39;</span><span class="p">)</span><span class="o">;</span>
+    <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;GET Users&#39;</span><span class="p">)</span><span class="o">;</span>
   <span class="k">end</span><span class="p">)</span><span class="o">;</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><span class="filename">Respond to a DELETE request to the /user route</span><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Delete</span><span class="p">(</span><span class="s">&#39;/user&#39;</span><span class="o">,</span>
-<span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="k">procedure</span> <span class="nf">DoGetUsers</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TNextProc</span><span class="p">)</span><span class="o">;</span>
 <span class="k">begin</span>
-  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Got a DELETE request at /user&#39;</span><span class="p">)</span><span class="o">;</span>
-<span class="k">end</span><span class="p">)</span><span class="o">;</span>
+  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;GET Users&#39;</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+
+<span class="k">begin</span>
+  <span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/users&#39;</span><span class="o">,</span> <span class="n">DoGetUsers</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">.</span> 
 </code></pre></div>
 </div>
 </div>
 </div>
-<p><em>NOTA: A versão atual do <a href="https://www.lazarus-ide.org/index.php?page=downloads">Lazarus 3.2.2</a> não tem suporte a métodos anônimos, veja o exemplo em <a href="../hello-world">Olá Mundo</a> de como informar o callback no Lazarus</em></p>
+<p>Responder a uma requisição POST para a rota <code>/users</code>:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Delphi</label><label for="__tabbed_2_2">Lazarus</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Post</span><span class="p">(</span><span class="s">&#39;/users&#39;</span><span class="o">,</span>
+  <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
+  <span class="k">begin</span>
+    <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;POST Users&#39;</span><span class="p">)</span><span class="o">;</span>
+  <span class="k">end</span><span class="p">)</span><span class="o">;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="k">procedure</span> <span class="nf">DoPostUsers</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TNextProc</span><span class="p">)</span><span class="o">;</span>
+<span class="k">begin</span>
+  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;POST Users&#39;</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+
+<span class="k">begin</span>
+  <span class="n">THorse</span><span class="o">.</span><span class="n">Post</span><span class="p">(</span><span class="s">&#39;/users&#39;</span><span class="o">,</span> <span class="n">DoPostUsers</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">.</span> 
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>Responder a uma requisição PUT para a rota <code>/users/:id</code>:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Delphi</label><label for="__tabbed_3_2">Lazarus</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Put</span><span class="p">(</span><span class="s">&#39;/users/:id&#39;</span><span class="o">,</span>
+  <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
+  <span class="k">begin</span>
+    <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;PUT Users&#39;</span><span class="p">)</span><span class="o">;</span>
+  <span class="k">end</span><span class="p">)</span><span class="o">;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="k">procedure</span> <span class="nf">DoPutUser</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TNextProc</span><span class="p">)</span><span class="o">;</span>
+<span class="k">begin</span>
+  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;PUT Users&#39;</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+
+<span class="k">begin</span>
+  <span class="n">THorse</span><span class="o">.</span><span class="n">Put</span><span class="p">(</span><span class="s">&#39;/users/:id&#39;</span><span class="o">,</span> <span class="n">DoPutUser</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">.</span> 
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>Responder a uma requisição DELETE para a rota <code>/users/:id</code>:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Delphi</label><label for="__tabbed_4_2">Lazarus</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">THorse</span><span class="o">.</span><span class="n">Delete</span><span class="p">(</span><span class="s">&#39;/users/:id&#39;</span><span class="o">,</span>
+  <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
+  <span class="k">begin</span>
+    <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;DELETE Users&#39;</span><span class="p">)</span><span class="o">;</span>
+  <span class="k">end</span><span class="p">)</span><span class="o">;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="k">procedure</span> <span class="nf">DoDeleteUser</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TNextProc</span><span class="p">)</span><span class="o">;</span>
+<span class="k">begin</span>
+  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;DELETE Users&#39;</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+
+<span class="k">begin</span>
+  <span class="n">THorse</span><span class="o">.</span><span class="n">Delete</span><span class="p">(</span><span class="s">&#39;/users/:id&#39;</span><span class="o">,</span> <span class="n">DoDeleteUser</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">.</span> 
+</code></pre></div>
+</div>
+</div>
+</div>
 
               
             </article>

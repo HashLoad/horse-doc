@@ -468,13 +468,16 @@
 <li class="i18n-link i18n-link-found i18n-link-en"><a href="index.en/">English</a></li>
 </ul>
 <h1 id="horse">Horse</h1>
-<p><img alt="Horse " src="horse.png" /></p>
+<p><img alt="Horse " src="horse.png" style="display:block;margin-left:auto;margin-right:auto;width:30%;" /></p>
 <h2 id="o-que-e-o-horse">O que é o Horse?</h2>
 <p>Horse é um <strong>framework</strong> para aplicações web compatível com Delphi e Lazarus. Fácil de ser adotada e integrada com outras bibliotecas ou projetos.</p>
 <h2 id="primeiros-passos">Primeiros passos</h2>
 <p>A melhor maneira de obter o Horse é acessando a nossa <a href="installation">Página de instalação</a>. </p>
 <h2 id="nocoes-basicas">Noções básicas</h2>
 <p>O coração do Horse é um sistema que nos permite maper rotas <em><abbr title="Hypertext Transfer Protocol">HTTP</abbr></em>  de forma declarativa, com uma sintaxe muito simples.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Delphi</label><label for="__tabbed_1_2">Lazarus</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">uses</span> <span class="n">Horse</span><span class="o">;</span>
 
 <span class="k">begin</span>
@@ -487,6 +490,25 @@
   <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="p">(</span><span class="mi">9000</span><span class="p">)</span><span class="o">;</span>
 <span class="k">end</span><span class="o">.</span>
 </code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="cm">{$MODE DELPHI}{$H+}</span>
+
+<span class="k">uses</span> <span class="n">Horse</span><span class="o">;</span>
+
+<span class="k">procedure</span> <span class="nf">GetPing</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TNextProc</span><span class="p">)</span><span class="o">;</span>
+<span class="k">begin</span>
+  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Pong&#39;</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+
+<span class="k">begin</span>
+  <span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/ping&#39;</span><span class="o">,</span> <span class="n">GetPing</span><span class="p">)</span><span class="o">;</span>
+  <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="p">(</span><span class="mi">9000</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">.</span> 
+</code></pre></div>
+</div>
+</div>
+</div>
 <p>E nós já criamos nosso primeiro servidor!</p>
 <h2 id="pronto-para-mais">Pronto para mais?</h2>
 <p>Esta é apenas uma breve introdução do Horse. Continue o guia para se aprofundar em um maior número de detalhes. Então vamos lá!</p>

@@ -29,7 +29,7 @@ Reply with "Hello World!" to whoever requested (*client* who made the *request*)
 
 ===  "GET"
 
-    ``` pascal
+    ``` pascal title="Respond to GET request to the /ping route:"
     THorse.Get('/ping',
     procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
     begin

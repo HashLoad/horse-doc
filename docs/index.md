@@ -6,7 +6,7 @@ order: 1
 
 # Horse
 
-![Horse ](horse.png)
+![Horse ](horse.png){: style="display:block;margin-left:auto;margin-right:auto;width:30%;"}
 
 ## O que é o Horse?
 
@@ -20,19 +20,36 @@ A melhor maneira de obter o Horse é acessando a nossa [Página de instalação]
 
 O coração do Horse é um sistema que nos permite maper rotas *HTTP*  de forma declarativa, com uma sintaxe muito simples.
 
-``` delphi
-uses Horse;
-
-begin
-  THorse.Get('/ping',
-    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+=== "Delphi"
+    ``` delphi
+    uses Horse;
+    
     begin
-      Res.Send('pong');
-    end);
-
-  THorse.Listen(9000);
-end.
-```
+      THorse.Get('/ping',
+        procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+        begin
+          Res.Send('pong');
+        end);
+    
+      THorse.Listen(9000);
+    end.
+    ```
+=== "Lazarus"
+    ``` delphi
+    {$MODE DELPHI}{$H+}
+    
+    uses Horse;
+    
+    procedure GetPing(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
+    begin
+      Res.Send('Pong');
+    end;
+    
+    begin
+      THorse.Get('/ping', GetPing);
+      THorse.Listen(9000);
+    end. 
+    ```	
 
 E nós já criamos nosso primeiro servidor!
 

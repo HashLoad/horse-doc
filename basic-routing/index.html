@@ -356,14 +356,14 @@
 <ul>
 <li class="i18n-link i18n-link-found i18n-link-en"><a href="../basic-routing.en/">English</a></li>
 </ul>
-<p>Rotas determinam como a aplicação responderá a uma requisição do <em>cliente</em> em um caminho específico chamado <em>endpoint</em>, que é uma <a href="https://pt.wikipedia.org/wiki/URI">URI</a> que especifica um método do protocolo HTTP (POST, PUT, GET, DELETE e além).</p>
+<p>Rotas determinam como a aplicação responderá a uma requisição do <em>cliente</em> em um caminho específico chamado <em>endpoint</em>, que é uma <a href="https://pt.wikipedia.org/wiki/URI"><abbr title="Uniform Resource Identifier">URI</abbr></a> que especifica um método do protocolo <abbr title="Hypertext Transfer Protocol">HTTP</abbr> (POST, PUT, GET, DELETE e além).</p>
 <p>Cada rota pode ter mais de um tratamento, que responderá de acordo com a requisição correspondente.</p>
 <p>Uma rota possui a seguinte estrutura</p>
 <div class="highlight"><pre><span></span><code>  <span class="n">THorse</span><span class="o">.</span><span class="n">METHOD</span><span class="p">(</span><span class="n">PATH</span><span class="o">,</span> <span class="n">HANDLER</span><span class="p">)</span><span class="o">;</span>
 </code></pre></div>
 <p>Onde:</p>
 <ul>
-<li><code>METHOD</code> é um método HTTP.</li>
+<li><code>METHOD</code> é um método <abbr title="Hypertext Transfer Protocol">HTTP</abbr>.</li>
 <li><code>PATH</code> é o caminho no servidor.</li>
 <li><code>HANDLER</code> é um método do delphi (procedure) quando esta rota for acessada.</li>
 </ul>

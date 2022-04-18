@@ -356,14 +356,14 @@
 <ul>
 <li class="i18n-link i18n-link-found i18n-link-pt"><a href="../basic-routing/">Português</a></li>
 </ul>
-<p>Routing determines how the application will respond to a request from a <em>client</em> at an <em>endpoint</em>, which would be the URI and a specific method of the HTTP protocol (POST, PUT, GET, DELETE and so on).</p>
+<p>Routing determines how the application will respond to a request from a <em>client</em> at an <em>endpoint</em>, which would be the <abbr title="Uniform Resource Identifier">URI</abbr> and a specific method of the <abbr title="Hypertext Transfer Protocol">HTTP</abbr> protocol (POST, PUT, GET, DELETE and so on).</p>
 <p>On the route, it is possible to have more than one treatment, which will be executed when the route that was requested is the corresponding one.</p>
 <p>The route has the following structure:</p>
 <div class="highlight"><pre><span></span><code>  <span class="n">THorse</span><span class="o">.</span><span class="n">METHOD</span><span class="p">(</span><span class="n">PATH</span><span class="o">,</span> <span class="n">HANDLER</span><span class="p">)</span><span class="o">;</span>
 </code></pre></div>
 <p>Where:</p>
 <ul>
-<li><code>METHOD</code> is an HTTP request method.</li>
+<li><code>METHOD</code> is an <abbr title="Hypertext Transfer Protocol">HTTP</abbr> request method.</li>
 <li><code>PATH</code> it's a path on the server.</li>
 <li><code>HANDLER</code> is the method (procedure) that will be executed when the route is matched.</li>
 </ul>

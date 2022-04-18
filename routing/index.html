@@ -467,7 +467,7 @@
 <span class="k">end</span><span class="o">.</span>
 </code></pre></div>
 <h2 id="metodos-de-roteamento">Métodos de roteamento</h2>
-<p>Um método de roteamento é derivado a partir de um dos métodos HTTP, e é anexado a uma procedure que irá tratar esta requisição.</p>
+<p>Um método de roteamento é derivado a partir de um dos métodos <abbr title="Hypertext Transfer Protocol">HTTP</abbr>, e é anexado a uma procedure que irá tratar esta requisição.</p>
 <p>o código a seguir é um exemplo de rotas para a raiz do aplicativo que estão definidas para os métodos GET e POST.</p>
 <div class="highlight"><pre><span></span><code><span class="k">uses</span> <span class="n">Horse</span><span class="o">;</span>
 
@@ -487,9 +487,9 @@
   <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="p">(</span><span class="mi">9000</span><span class="p">)</span><span class="o">;</span>
 <span class="k">end</span><span class="o">.</span>
 </code></pre></div>
-<p>O Horse suporta os seguintes métodos de roteamento que correspondem aos métodos HTTP: GET, POST, PUT, PATCH, HEAD, DELETE.</p>
-<p>Existe um método de roteamento especial,  THorse.All, que não é derivado de nenhum método HTTP. Este método é usado para carregar procedures em um caminho para todos os métodos de solicitação.</p>
-<p>No exemplo a seguir, o manipulador irá ser executado para solicitações para “/test” se você estiver usando GET, POST, PUT, DELETE, ou qualquer outro método de solicitação HTTP que é suportado pelo Horse.</p>
+<p>O Horse suporta os seguintes métodos de roteamento que correspondem aos métodos <abbr title="Hypertext Transfer Protocol">HTTP</abbr>: GET, POST, PUT, PATCH, HEAD, DELETE.</p>
+<p>Existe um método de roteamento especial,  THorse.All, que não é derivado de nenhum método <abbr title="Hypertext Transfer Protocol">HTTP</abbr>. Este método é usado para carregar procedures em um caminho para todos os métodos de solicitação.</p>
+<p>No exemplo a seguir, o manipulador irá ser executado para solicitações para “/test” se você estiver usando GET, POST, PUT, DELETE, ou qualquer outro método de solicitação <abbr title="Hypertext Transfer Protocol">HTTP</abbr> que é suportado pelo Horse.</p>
 <div class="highlight"><pre><span></span><code>  <span class="n">THorse</span><span class="o">.</span><span class="n">All</span><span class="p">(</span><span class="s">&#39;/test&#39;</span><span class="o">,</span>
     <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
     <span class="k">begin</span>

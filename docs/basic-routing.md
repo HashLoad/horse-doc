@@ -6,12 +6,11 @@ order: 1
 
 Rotas determinam como a aplicação responderá a uma requisição do *cliente* em um caminho específico chamado *endpoint*, que é uma [URI](https://pt.wikipedia.org/wiki/URI) que especifica um método do protocolo HTTP (POST, PUT, GET, DELETE e além).
 
-*[URI]: Indicador Único de Recurso  
-*[HTTP]: Protocolo de Internet  
-
 Cada rota pode ter mais de um tratamento, que responderá de acordo com a requisição correspondente.
 
-Uma rota possui a seguinte estrutura
+## Estrutura
+
+Uma rota possui a seguinte estrutura:
 
 ``` delphi
   THorse.METHOD(PATH, HANDLER);
@@ -19,54 +18,113 @@ Uma rota possui a seguinte estrutura
 
 Onde:
 
-* `METHOD` é um método HTTP.
-* `PATH` é o caminho no servidor.
-* `HANDLER` é um método do delphi (procedure) quando esta rota for acessada.
+* `THorse` é a instancia atual do Horse;
+* `METHOD` é um método do protocolo HTTP;
+* `PATH` é um caminho no servidor;
+* `HANDLER` é a função que será executada quando a rota for acessada;
 
-Os exemplos a seguir ilustram a definição de rotas simples
+## Exemplos
 
-Reply with "Hello World!" to whoever requested (*client* who made the *request*):
+Os exemplos a seguir ilustram a definição de rotas simples:
 
-===  "GET"
+Responder a uma requisição GET para a rota `/users`:
 
-    ``` pascal title="Respond to GET request to the /ping route:"
-    THorse.Get('/ping',
-    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
-    begin
-      Res.Send('Hello World!');
-    end);
-    ```
+===  "Delphi"
 
-===  "POST"
-
-    ``` pascal title="Respond to POST request on the root route (/):"
-    THorse.Post('/',
-    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
-    begin
-      Res.Send('Got a POST request');
-    end);
-    ```
-
-===  "PUT"
-
-    ``` pascal title="Respond to a PUT request to the /user route"
-    THorse.Put('/user',
+    ``` delphi
+    THorse.Get('/users',
       procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
       begin
-        Res.Send('Got a PUT request at /user');
+        Res.Send('GET Users');
       end);
     ```
 
-===  "DELETE"
+===  "Lazarus"
 
-    ``` pascal title="Respond to a DELETE request to the /user route"
-    THorse.Delete('/user',
-    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+    ``` delphi
+    procedure DoGetUsers(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
     begin
-      Res.Send('Got a DELETE request at /user');
-    end);
+      Res.Send('GET Users');
+    end;
+
+    begin
+      THorse.Get('/users', DoGetUsers);
+    end. 
     ```
 
-*NOTA: A versão atual do [Lazarus 3.2.2](https://www.lazarus-ide.org/index.php?page=downloads) não tem suporte a métodos anônimos, veja o exemplo em [Olá Mundo](../hello-world) de como informar o callback no Lazarus*
+Responder a uma requisição POST para a rota `/users`:
+
+===  "Delphi"
+
+    ``` delphi
+    THorse.Post('/users',
+      procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+      begin
+        Res.Send('POST Users');
+      end);
+    ```
+
+===  "Lazarus"
+
+    ``` delphi
+    procedure DoPostUsers(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
+    begin
+      Res.Send('POST Users');
+    end;
+
+    begin
+      THorse.Post('/users', DoPostUsers);
+    end. 
+    ```
+    
+Responder a uma requisição PUT para a rota `/users/:id`:
+
+===  "Delphi"
+
+    ``` delphi
+    THorse.Put('/users/:id',
+      procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+      begin
+        Res.Send('PUT Users');
+      end);
+    ```
+
+===  "Lazarus"
+
+    ``` delphi
+    procedure DoPutUser(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
+    begin
+      Res.Send('PUT Users');
+    end;
+
+    begin
+      THorse.Put('/users/:id', DoPutUser);
+    end. 
+    ```
+
+Responder a uma requisição DELETE para a rota `/users/:id`:
+
+===  "Delphi"
+
+    ``` delphi
+    THorse.Delete('/users/:id',
+      procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+      begin
+        Res.Send('DELETE Users');
+      end);
+    ```
+
+===  "Lazarus"
+
+    ``` delphi
+    procedure DoDeleteUser(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
+    begin
+      Res.Send('DELETE Users');
+    end;
+
+    begin
+      THorse.Delete('/users/:id', DoDeleteUser);
+    end. 
+    ```
 
 --8<-- "includes/abbreviations.md"

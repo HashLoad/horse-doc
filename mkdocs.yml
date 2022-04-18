@@ -36,11 +36,13 @@ plugins:
           subsection: "Subsection"
           page title: "Page with title translated"
           guide: "Guide"
+          introduction: "Introduction"
         pt:
           section title: "Seção"
           subsection: "Subseção"
           page title: "Página com título traduzido"
           guide: "Guia"
+          introduction: "Introdução"
         
       
 markdown_extensions:  
@@ -81,11 +83,12 @@ nav:
   # - pt: /pt/
 - index.md
 - index.en.md
-- installation.md
-- installation.en.md
-- hello-world.md
-- hello-world.en.md
-- basic-routing.md
-- basic-routing.en.md
+- introduction: 
+  - installation.md
+  - installation.en.md
+  - hello-world.md
+  - hello-world.en.md
+  - basic-routing.md
+  - basic-routing.en.md
 - guide:
   - 'routing.md' 

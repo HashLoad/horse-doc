@@ -72,3 +72,5 @@ Then open a browser, type http://localhost:9000/ in the address bar and browse t
 If you were able to view the result in your browser, this is great, your server worked correctly. Now you're ready to evolve on Horse!
 
 See more at: [Understanding routing](../basic-routing.en)
+
+--8<-- "includes/abbreviations.md"

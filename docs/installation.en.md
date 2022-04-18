@@ -24,3 +24,5 @@ $ boss install horse
 
 See more at:
   * Creating a [Hello world!](../hello-world.en).
+
+--8<-- "includes/abbreviations.md"

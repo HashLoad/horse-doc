@@ -46,3 +46,5 @@ See more at:
  * [Installing](../installation.en) Horse.
  * Creating a [Hello world!](../hello-world.en).
  * Understanding [routing](../basic-routing.en).
+
+ --8<-- "includes/abbreviations.md"

@@ -63,3 +63,4 @@ Reply with "Hello World!" to whoever requested (*client* who made the *request*)
         Res.Send('Got a DELETE request at /user');
       end);
     ```
+--8<-- "includes/abbreviations.md"

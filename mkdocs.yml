@@ -38,6 +38,8 @@ plugins:
           guide: "Guide"
           introduction: "Introduction"
           resources: "Resources"
+          middlewares: "Middlewares"
+          official-middlewares: "Official Middlewares"
         pt:
           section title: "Seção"
           subsection: "Subseção"
@@ -45,6 +47,8 @@ plugins:
           guide: "Guia"
           introduction: "Introdução"
           resources: "Recursos"
+          middlewares: "Middlewares"
+          official-middlewares: "Middlewares Oficiais"
 
 markdown_extensions:
   - abbr
@@ -94,4 +98,7 @@ nav:
   - guide:
       - "routing.md"
   - resources:
-      - "middlewares.md"
+      - middlewares:
+          - "middlewares/middlewares.md"
+          - official-middlewares:
+              - "middlewares/jhonson.md"

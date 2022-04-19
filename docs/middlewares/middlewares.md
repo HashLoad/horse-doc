@@ -1,5 +1,5 @@
 ---
-title: Middlewares
+title: Middlewares no Horse
 type: iniciante
 order: 1
 ---
@@ -51,78 +51,6 @@ Esta é uma lista de middlewares que são criados pela comunidade Horse. Se voc�
 | [andre-djsystem/horse-manipulate-request](https://github.com/andre-djsystem/horse-manipulate-request)   | &nbsp;&nbsp;&nbsp;✔️ | &nbsp;&nbsp;&nbsp;&nbsp;✔️ |
 | [andre-djsystem/horse-manipulate-response](https://github.com/andre-djsystem/horse-manipulate-response) | &nbsp;&nbsp;&nbsp;✔️ | &nbsp;&nbsp;&nbsp;&nbsp;✔️ |
 | [antoniojmsjr/Horse-IPGeoLocation](https://github.com/antoniojmsjr/Horse-IPGeoLocation)                 | &nbsp;&nbsp;&nbsp;✔️ | &nbsp;&nbsp;&nbsp;&nbsp;❌ |
-
-## 🤙 Exemplo de Uso: [horse/json](https://github.com/HashLoad/jhonson)
-
-O Jhonson([horse/json](https://github.com/HashLoad/jhonson)) usado para adicionar a compatibilidade com o JSON, pode ser usado da seguinte forma:
-
-=== "Delphi"
-
-    ```delphi
-    uses
-      Horse,
-      Horse.Jhonson, // It's necessary to use the unit
-      System.JSON;
-
-    begin
-      // It's necessary to add the middleware in the Horse:
-      THorse.Use(Jhonson());
-
-      // You can specify the charset when adding middleware to the Horse:
-      // THorse.Use(Jhonson('UTF-8'));
-
-      THorse.Post('/ping',
-        procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
-        var
-          LBody: TJSONObject;
-        begin
-          // Req.Body gives access to the content of the request in string format.
-          // Using jhonson middleware, we can get the content of the request in JSON format.
-
-          LBody := Req.Body<TJSONObject>;
-          Res.Send<TJSONObject>(LBody);
-        end);
-
-      THorse.Listen(9000);
-    end;
-    ```
-
-=== "Lazarus"
-
-    ```pascal
-    {$MODE DELPHI}{$H+}
-
-    uses
-      {$IFDEF UNIX}{$IFDEF UseCThreads}
-      cthreads,
-      {$ENDIF}{$ENDIF}
-      Horse,
-      Horse.Jhonson, // It's necessary to use the unit
-      fpjson,
-      SysUtils;
-
-    procedure PostPing(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
-    var
-      LBody: TJSONObject;
-    begin
-      // Req.Body gives access to the content of the request in string format.
-      // Using jhonson middleware, we can get the content of the request in JSON format.
-      LBody := Req.Body<TJSONObject>;
-      Res.Send<TJSONObject>(LBody);
-    end;
-
-    begin
-      // It's necessary to add the middleware in the Horse:
-      THorse.Use(Jhonson);
-
-      // You can specify the charset when adding middleware to the Horse:
-      // THorse.Use(Jhonson('UTF-8'));
-
-      THorse.Post('/ping', PostPing);
-
-      THorse.Listen(9000);
-    end.
-    ```
 
 ## ⚠️ Avisos
 

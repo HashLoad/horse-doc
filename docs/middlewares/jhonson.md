@@ -8,7 +8,7 @@ order: 1
 
 O **[Jhonson](https://github.com/HashLoad/jhonson)** é um middleware para você trabalhar com **JSON** em suas APIs.
 
-## ⚙️ Instalação:
+## ⚙️ Instalação
 
 Você pode instalar facilmente utilizando o comando [`boss install`](https://github.com/HashLoad/boss):
 
@@ -28,7 +28,7 @@ Ou, se você preferir instalar manualmente, basta adicionar as pastas em seu pro
 | -------------- | -------------------- |
 | &nbsp;&nbsp;✔️ | &nbsp;&nbsp;&nbsp;✔️ |
 
-## 🤙 Exemplo de Uso
+## 🤙 Exemplos de Uso
 
 === "Delphi"
 

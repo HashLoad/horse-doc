@@ -102,3 +102,5 @@ nav:
           - "middlewares/middlewares.md"
           - official-middlewares:
               - "middlewares/jhonson.md"
+              - "middlewares/basic-auth.md"
+              - "middlewares/horse-cors.md"

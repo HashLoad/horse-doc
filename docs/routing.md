@@ -72,7 +72,7 @@ Res.Download(AFileName) | Solicita que seja efetuado o download de um arquivo |
 Res.RedirectTo(ALocation) | Redireciona uma solicitação |
 Res.SendFile(AFileName) | Envia um arquivo |
 Res.Send(AContent) | Envia uma string |
-Res.Send<T: class> | Envia um objeto |
+Res.Send&lt;T: class&gt; | Envia um objeto |
 Res.Status(AStatus) | Configura o código do status de resposta |
 Res.ContentType(AContentType) | Configura o ContentType da resposta |
 

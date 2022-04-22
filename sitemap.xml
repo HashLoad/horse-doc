@@ -1,58 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>None</loc>
+         <loc>.</loc>
          <lastmod>2022-04-22</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/"/>
+         <xhtml:link rel="alternate" hreflang="pt" href="pt/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
+         <loc>%23%20Diagramas/</loc>
          <lastmod>2022-04-22</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/%23%20Diagramas/"/>
+         <xhtml:link rel="alternate" hreflang="pt" href="pt/%23%20Diagramas/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
+         <loc>basic-routing/</loc>
          <lastmod>2022-04-22</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/basic-routing/"/>
+         <xhtml:link rel="alternate" hreflang="pt" href="pt/basic-routing/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
+         <loc>hello-world/</loc>
          <lastmod>2022-04-22</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/hello-world/"/>
+         <xhtml:link rel="alternate" hreflang="pt" href="pt/hello-world/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
+         <loc>installation/</loc>
          <lastmod>2022-04-22</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/installation/"/>
+         <xhtml:link rel="alternate" hreflang="pt" href="pt/installation/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
+         <loc>missing-translations/</loc>
          <lastmod>2022-04-22</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/missing-translations/"/>
+         <xhtml:link rel="alternate" hreflang="pt" href="pt/missing-translations/"/>
+         
     </url>
     <url>
-         <loc>None</loc>
+         <loc>routing/</loc>
          <lastmod>2022-04-22</lastmod>
          <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>None</loc>
-         <lastmod>2022-04-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>None</loc>
-         <lastmod>2022-04-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>None</loc>
-         <lastmod>2022-04-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>None</loc>
-         <lastmod>2022-04-22</lastmod>
-         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/routing/"/>
+         <xhtml:link rel="alternate" hreflang="pt" href="pt/routing/"/>
+         
     </url>
 </urlset>

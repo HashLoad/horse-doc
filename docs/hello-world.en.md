@@ -6,7 +6,7 @@ order: 1
 
 # Hello world!
 
-First create a console project in Delphi or Lazarus, save the project with the name you want (in this example, it will be saved as *hashload_horse*). Then install Horse as a dependency on your project, according to the [installation guide](../installation.en).
+First create a console project in Delphi or Lazarus, save the project with the name you want (in this example, it will be saved as *hashload_horse*). Then install Horse as a dependency on your project, according to the [installation guide](../installation).
 
 After Horse is created and installed in your project, include the following code:
 
@@ -71,6 +71,6 @@ Then open a browser, type http://localhost:9000/ in the address bar and browse t
 
 If you were able to view the result in your browser, this is great, your server worked correctly. Now you're ready to evolve on Horse!
 
-See more at: [Understanding routing](../basic-routing.en)
+See more at: [Understanding routing](../basic-routing)
 
 --8<-- "includes/abbreviations.md"

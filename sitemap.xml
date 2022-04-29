@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
          <loc>.</loc>
-         <lastmod>2022-04-22</lastmod>
+         <lastmod>2022-04-29</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="en/"/>
          <xhtml:link rel="alternate" hreflang="pt" href="pt/"/>
@@ -10,7 +10,7 @@
     </url>
     <url>
          <loc>%23%20Diagramas/</loc>
-         <lastmod>2022-04-22</lastmod>
+         <lastmod>2022-04-29</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="en/%23%20Diagramas/"/>
          <xhtml:link rel="alternate" hreflang="pt" href="pt/%23%20Diagramas/"/>
@@ -18,7 +18,7 @@
     </url>
     <url>
          <loc>basic-routing/</loc>
-         <lastmod>2022-04-22</lastmod>
+         <lastmod>2022-04-29</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="en/basic-routing/"/>
          <xhtml:link rel="alternate" hreflang="pt" href="pt/basic-routing/"/>
@@ -26,7 +26,7 @@
     </url>
     <url>
          <loc>hello-world/</loc>
-         <lastmod>2022-04-22</lastmod>
+         <lastmod>2022-04-29</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="en/hello-world/"/>
          <xhtml:link rel="alternate" hreflang="pt" href="pt/hello-world/"/>
@@ -34,7 +34,7 @@
     </url>
     <url>
          <loc>installation/</loc>
-         <lastmod>2022-04-22</lastmod>
+         <lastmod>2022-04-29</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="en/installation/"/>
          <xhtml:link rel="alternate" hreflang="pt" href="pt/installation/"/>
@@ -42,7 +42,7 @@
     </url>
     <url>
          <loc>missing-translations/</loc>
-         <lastmod>2022-04-22</lastmod>
+         <lastmod>2022-04-29</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="en/missing-translations/"/>
          <xhtml:link rel="alternate" hreflang="pt" href="pt/missing-translations/"/>
@@ -50,10 +50,74 @@
     </url>
     <url>
          <loc>routing/</loc>
-         <lastmod>2022-04-22</lastmod>
+         <lastmod>2022-04-29</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="en/routing/"/>
          <xhtml:link rel="alternate" hreflang="pt" href="pt/routing/"/>
+         
+    </url>
+    <url>
+         <loc>middlewares/basic-auth/</loc>
+         <lastmod>2022-04-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/basic-auth/"/>
+         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/basic-auth/"/>
+         
+    </url>
+    <url>
+         <loc>middlewares/handle-exception/</loc>
+         <lastmod>2022-04-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/handle-exception/"/>
+         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/handle-exception/"/>
+         
+    </url>
+    <url>
+         <loc>middlewares/horse-compression/</loc>
+         <lastmod>2022-04-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/horse-compression/"/>
+         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/horse-compression/"/>
+         
+    </url>
+    <url>
+         <loc>middlewares/horse-cors/</loc>
+         <lastmod>2022-04-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/horse-cors/"/>
+         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/horse-cors/"/>
+         
+    </url>
+    <url>
+         <loc>middlewares/horse-jwt/</loc>
+         <lastmod>2022-04-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/horse-jwt/"/>
+         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/horse-jwt/"/>
+         
+    </url>
+    <url>
+         <loc>middlewares/jhonson/</loc>
+         <lastmod>2022-04-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/jhonson/"/>
+         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/jhonson/"/>
+         
+    </url>
+    <url>
+         <loc>middlewares/middlewares/</loc>
+         <lastmod>2022-04-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/middlewares/"/>
+         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/middlewares/"/>
+         
+    </url>
+    <url>
+         <loc>middlewares/octet-stream/</loc>
+         <lastmod>2022-04-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/octet-stream/"/>
+         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/octet-stream/"/>
          
     </url>
 </urlset>

@@ -418,6 +418,218 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          resources
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="resources" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          resources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1">
+          middlewares
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="middlewares" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          middlewares
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../middlewares/middlewares/" class="md-nav__link">
+        Middlewares no Horse
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1_2" type="checkbox" id="__nav_4_1_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1_2">
+          official-middlewares
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="official-middlewares" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          official-middlewares
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../middlewares/jhonson/" class="md-nav__link">
+        Jhonson
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../middlewares/basic-auth/" class="md-nav__link">
+        Basic Auth
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../middlewares/horse-cors/" class="md-nav__link">
+        Horse CORS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../middlewares/octet-stream/" class="md-nav__link">
+        Octet Stream
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../middlewares/horse-jwt/" class="md-nav__link">
+        Horse JWT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../middlewares/handle-exception/" class="md-nav__link">
+        Handle Exception
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../middlewares/horse-compression/" class="md-nav__link">
+        Horse Compression
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -505,18 +717,18 @@
     <span class="k">begin</span>
       <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;GET request to the root&#39;</span><span class="p">)</span><span class="o">;</span>
     <span class="k">end</span><span class="p">)</span><span class="o">;</span>
-	
+
   <span class="n">THorse</span><span class="o">.</span><span class="n">Post</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span>
     <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
     <span class="k">begin</span>
       <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;POST request to the root&#39;</span><span class="p">)</span><span class="o">;</span>
-    <span class="k">end</span><span class="p">)</span>	
+    <span class="k">end</span><span class="p">)</span>
 
   <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="p">(</span><span class="mi">9000</span><span class="p">)</span><span class="o">;</span>
 <span class="k">end</span><span class="o">.</span>
 </code></pre></div>
 <p>O Horse suporta os seguintes métodos de roteamento que correspondem aos métodos <abbr title="Hypertext Transfer Protocol">HTTP</abbr>: GET, POST, PUT, PATCH, HEAD, DELETE.</p>
-<p>Existe um método de roteamento especial,  THorse.All, que não é derivado de nenhum método <abbr title="Hypertext Transfer Protocol">HTTP</abbr>. Este método é usado para carregar procedures em um caminho para todos os métodos de solicitação.</p>
+<p>Existe um método de roteamento especial, THorse.All, que não é derivado de nenhum método <abbr title="Hypertext Transfer Protocol">HTTP</abbr>. Este método é usado para carregar procedures em um caminho para todos os métodos de solicitação.</p>
 <p>No exemplo a seguir, o manipulador irá ser executado para solicitações para “/test” se você estiver usando GET, POST, PUT, DELETE, ou qualquer outro método de solicitação <abbr title="Hypertext Transfer Protocol">HTTP</abbr> que é suportado pelo Horse.</p>
 <div class="highlight"><pre><span></span><code>  <span class="n">THorse</span><span class="o">.</span><span class="n">All</span><span class="p">(</span><span class="s">&#39;/test&#39;</span><span class="o">,</span>
     <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
@@ -526,44 +738,16 @@
 </code></pre></div>
 <h2 id="metodos-de-resposta">Métodos de resposta</h2>
 <p>Os métodos do objeto de resposta (res) na seguinte tabela podem enviar uma resposta ao cliente, e finalizar o ciclo solicitação-resposta.</p>
-<table>
-<thead>
-<tr>
-<th>Método</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Res.Download(AFileName)</td>
-<td>Solicita que seja efetuado o download de um arquivo</td>
-</tr>
-<tr>
-<td>Res.RedirectTo(ALocation)</td>
-<td>Redireciona uma solicitação</td>
-</tr>
-<tr>
-<td>Res.SendFile(AFileName)</td>
-<td>Envia um arquivo</td>
-</tr>
-<tr>
-<td>Res.Send(AContent)</td>
-<td>Envia uma string</td>
-</tr>
-<tr>
-<td>Res.Send&lt;T: class&gt;</td>
-<td>Envia um objeto</td>
-</tr>
-<tr>
-<td>Res.Status(AStatus)</td>
-<td>Configura o código do status de resposta</td>
-</tr>
-<tr>
-<td>Res.ContentType(AContentType)</td>
-<td>Configura o ContentType da resposta</td>
-</tr>
-</tbody>
-</table>
+<p>=======
+| Método                        | Descrição                                           |
+| ----------------------------- | --------------------------------------------------- |
+| Res.Download(AFileName)       | Solicita que seja efetuado o download de um arquivo |
+| Res.RedirectTo(ALocation)     | Redireciona uma solicitação                         |
+| Res.SendFile(AFileName)       | Envia um arquivo                                    |
+| Res.Send(AContent)            | Envia uma string                                    |
+| Res.Send&lt;T: class&gt;      | Envia um objeto                                     |
+| Res.Status(AStatus)           | Configura o código do status de resposta            |
+| Res.ContentType(AContentType) | Configura o ContentType da resposta                 |</p>
 
               
             </article>
@@ -591,6 +775,21 @@
           </div>
         </a>
       
+      
+        
+        <a href="../middlewares/middlewares/" class="md-footer__link md-footer__link--next" aria-label="Next: Middlewares no Horse" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Middlewares no Horse
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   

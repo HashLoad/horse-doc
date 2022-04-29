@@ -20,9 +20,9 @@ In the topic [Installation](../en/installation) you will see how to install Hors
 
 ## Basic Notions
 
-At the heart of Horse is a system that allows us to declaratively map *HTTP* routes using a very simple syntax:
+At the heart of Horse is a system that allows us to declaratively map _HTTP_ routes using a very simple syntax:
 
-``` delphi
+```delphi
 uses Horse;
 
 begin
@@ -43,8 +43,9 @@ We just created our first Horse server!
 We introduced Horse briefly - the rest of this guide will delve into other advanced features in a much greater level of detail, so read on!
 
 See more at:
- * [Installing](./installation) Horse.
- * Creating a [Hello world!](./hello-world).
- * Understanding [routing](./basic-routing).
 
- --8<-- "includes/abbreviations.md"
+- [Installing](./installation) Horse.
+- Creating a [Hello world!](./hello-world).
+- Understanding [routing](./basic-routing).
+
+--8<-- "includes/abbreviations.md"

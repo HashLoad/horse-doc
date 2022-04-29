@@ -8,7 +8,7 @@ O Roteamento é o mecanismo pelo qual as requisições são direcionadas para o 
 
 O código a seguir é um exemplo de uma rota muito básica.
 
-``` delphi
+```delphi
 uses Horse;
 
 begin
@@ -28,7 +28,7 @@ Um método de roteamento é derivado a partir de um dos métodos HTTP, e é anex
 
 o código a seguir é um exemplo de rotas para a raiz do aplicativo que estão definidas para os métodos GET e POST.
 
-``` delphi
+```delphi
 uses Horse;
 
 begin
@@ -37,12 +37,12 @@ begin
     begin
       Res.Send('GET request to the root');
     end);
-	
+
   THorse.Post('/',
     procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
     begin
       Res.Send('POST request to the root');
-    end)	
+    end)
 
   THorse.Listen(9000);
 end.
@@ -50,11 +50,11 @@ end.
 
 O Horse suporta os seguintes métodos de roteamento que correspondem aos métodos HTTP: GET, POST, PUT, PATCH, HEAD, DELETE.
 
-Existe um método de roteamento especial,  THorse.All, que não é derivado de nenhum método HTTP. Este método é usado para carregar procedures em um caminho para todos os métodos de solicitação.
+Existe um método de roteamento especial, THorse.All, que não é derivado de nenhum método HTTP. Este método é usado para carregar procedures em um caminho para todos os métodos de solicitação.
 
 No exemplo a seguir, o manipulador irá ser executado para solicitações para “/test” se você estiver usando GET, POST, PUT, DELETE, ou qualquer outro método de solicitação HTTP que é suportado pelo Horse.
 
-``` delphi
+```delphi
   THorse.All('/test',
     procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
     begin
@@ -66,14 +66,15 @@ No exemplo a seguir, o manipulador irá ser executado para solicitações para �
 
 Os métodos do objeto de resposta (res) na seguinte tabela podem enviar uma resposta ao cliente, e finalizar o ciclo solicitação-resposta.
 
-Método | Descrição |
-|--------|-----------|
-Res.Download(AFileName) | Solicita que seja efetuado o download de um arquivo |
-Res.RedirectTo(ALocation) | Redireciona uma solicitação |
-Res.SendFile(AFileName) | Envia um arquivo |
-Res.Send(AContent) | Envia uma string |
-Res.Send&lt;T: class&gt; | Envia um objeto |
-Res.Status(AStatus) | Configura o código do status de resposta |
-Res.ContentType(AContentType) | Configura o ContentType da resposta |
+=======
+| Método                        | Descrição                                           |
+| ----------------------------- | --------------------------------------------------- |
+| Res.Download(AFileName)       | Solicita que seja efetuado o download de um arquivo |
+| Res.RedirectTo(ALocation)     | Redireciona uma solicitação                         |
+| Res.SendFile(AFileName)       | Envia um arquivo                                    |
+| Res.Send(AContent)            | Envia uma string                                    |
+| Res.Send&lt;T: class&gt;      | Envia um objeto                                     |
+| Res.Status(AStatus)           | Configura o código do status de resposta            |
+| Res.ContentType(AContentType) | Configura o ContentType da resposta                 |
 
 --8<-- "includes/abbreviations.md"

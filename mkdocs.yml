@@ -1,7 +1,7 @@
 site_name: Horse
 site_description: Horse web framework, an Express inspired web framework for Delphi. Designed to ease things up for fast development in a minimalist way and with high performance.
 repo_url: https://github.com/HashLoad/horse
-edit_uri: "" 
+edit_uri: ""
 theme:
   icon:
     logo: material/horse
@@ -12,14 +12,14 @@ theme:
   # - pt: /pt/
   palette:
     primary: deep orange
-    
+
   name: material
   features:
-    - header.autohide 
+    - header.autohide
     - search.seggest
     - search.highlight
     - contents.tabs.link
-  
+
 plugins:
   - search
   - i18n:
@@ -34,11 +34,12 @@ plugins:
           page title: "Page with title translated"
           Guia: "Guide"
           Introdução: "Introduction"
+          Recursos: "Resources"
+          Middlewares Oficiais: "Official Middlewares"
         pt:
           section title: "Seção"
           subsection: "Subseção"
           page title: "Página com título traduzido"
-        
       
 markdown_extensions:  
   - abbr
@@ -48,7 +49,7 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.superfences
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   - pymdownx.superfences:
       preserve_tabs: true
       custom_fences:
@@ -59,12 +60,12 @@ markdown_extensions:
 
 extra:
   alternate:
-  - link: ./en/
-    name: English
-    lang: en
-  - link: ./
-    name: Português
-    lang: pt
+    - link: ./en/
+      name: English
+      lang: en
+    - link: ./
+      name: Português
+      lang: pt
   social:
     - icon: fontawesome/brands/telegram
       link: https://t.me/hashload
@@ -74,13 +75,24 @@ extra:
       link: https://discord.gg/VBBPhv6m
 
 nav:
-# - Languages:
+  # - Languages:
   # - en: /en/
   # - pt: /pt/
-- index.md
-- Introdução: 
-  - installation.md
-  - hello-world.md
-  - basic-routing.md
-- Guia:
-  - 'routing.md' 
+  - index.md
+  - Introdução:
+      - installation.md
+      - hello-world.md
+      - basic-routing.md
+  - Guia:
+      - "routing.md"
+  - resources:
+      - middlewares:
+          - "middlewares/middlewares.md"
+          - official-middlewares:
+              - "middlewares/jhonson.md"
+              - "middlewares/basic-auth.md"
+              - "middlewares/horse-cors.md"
+              - "middlewares/octet-stream.md"
+              - "middlewares/horse-jwt.md"
+              - "middlewares/handle-exception.md"
+              - "middlewares/horse-compression.md"

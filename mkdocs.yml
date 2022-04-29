@@ -85,10 +85,10 @@ nav:
       - basic-routing.md
   - Guia:
       - "routing.md"
-  - resources:
-      - middlewares:
+  - Recursos:
+      - Middlewares:
           - "middlewares/middlewares.md"
-          - official-middlewares:
+          - Middlewares Oficiais:
               - "middlewares/jhonson.md"
               - "middlewares/basic-auth.md"
               - "middlewares/horse-cors.md"

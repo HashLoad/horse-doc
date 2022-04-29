@@ -22,7 +22,6 @@ _NOTE: it is worth mentioning that the command `boss init` is to initialize the 
 [Download](https://github.com/HashLoad/boss/releases/latest) the latest version of Horse and include the **src/** folder in your project's _Library Path_.
 
 See more at:
-
 - Creating a [Hello world!](../hello-world).
 
 --8<-- "includes/abbreviations.md"

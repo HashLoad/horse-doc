@@ -27,25 +27,21 @@ plugins:
       languages:
         en: English
         pt: Português
-      translate_nav:
+      nav_translations:
         en:
           section title: "Section"
           subsection: "Subsection"
           page title: "Page with title translated"
           Guia: "Guide"
           Introdução: "Introduction"
-          resources: "Resources"
-          middlewares: "Middlewares"
-          official-middlewares: "Official Middlewares"
+          Recursos: "Resources"
+          Middlewares Oficiais: "Official Middlewares"
         pt:
           section title: "Seção"
           subsection: "Subseção"
           page title: "Página com título traduzido"
-          resources: "Recursos"
-          middlewares: "Middlewares"
-          official-middlewares: "Middlewares Oficiais"
-
-markdown_extensions:
+      
+markdown_extensions:  
   - abbr
   - attr_list
   - pymdownx.snippets
@@ -83,14 +79,10 @@ nav:
   # - en: /en/
   # - pt: /pt/
   - index.md
-  - index.en.md
   - Introdução:
       - installation.md
-      - installation.en.md
       - hello-world.md
-      - hello-world.en.md
       - basic-routing.md
-      - basic-routing.en.md
   - Guia:
       - "routing.md"
   - resources:

@@ -66,6 +66,7 @@ No exemplo a seguir, o manipulador irá ser executado para solicitações para �
 
 Os métodos do objeto de resposta (res) na seguinte tabela podem enviar uma resposta ao cliente, e finalizar o ciclo solicitação-resposta.
 
+=======
 | Método                        | Descrição                                           |
 | ----------------------------- | --------------------------------------------------- |
 | Res.Download(AFileName)       | Solicita que seja efetuado o download de um arquivo |

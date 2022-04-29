@@ -36,6 +36,7 @@ plugins:
           Introdução: "Introduction"
           Recursos: "Resources"
           Middlewares Oficiais: "Official Middlewares"
+          Middlewares no Horse: "Middlewares in Horse"
         pt:
           section title: "Seção"
           subsection: "Subseção"

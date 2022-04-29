@@ -6,7 +6,7 @@ order: 1
 
 # Horse
 
-![Horse ](horse.png)
+![Horse](assets/horse.png){: style="display:block;margin-left:auto;margin-right:auto;width:30%;"}
 
 ## What is Horse?
 
@@ -16,13 +16,13 @@ Horse is a **framework** for building web applications in Delphi and Lazarus. As
 
 The simplest way to test Horse is by installing. Feel free to install it and accompany us with some basic examples.
 
-In the topic [Installation](../installation.en) you will see how to install Horse.
+In the topic [Installation](../en/installation) you will see how to install Horse.
 
 ## Basic Notions
 
-At the heart of Horse is a system that allows us to declaratively map *HTTP* routes using a very simple syntax:
+At the heart of Horse is a system that allows us to declaratively map _HTTP_ routes using a very simple syntax:
 
-``` delphi
+```delphi
 uses Horse;
 
 begin
@@ -43,8 +43,9 @@ We just created our first Horse server!
 We introduced Horse briefly - the rest of this guide will delve into other advanced features in a much greater level of detail, so read on!
 
 See more at:
- * [Installing](../installation.en) Horse.
- * Creating a [Hello world!](../hello-world.en).
- * Understanding [routing](../basic-routing.en).
 
- --8<-- "includes/abbreviations.md"
+- [Installing](./installation) Horse.
+- Creating a [Hello world!](./hello-world).
+- Understanding [routing](./basic-routing).
+
+--8<-- "includes/abbreviations.md"

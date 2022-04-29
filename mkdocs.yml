@@ -23,20 +23,17 @@ theme:
 plugins:
   - search
   - i18n:
+      default_language: pt
       languages:
         en: English
         pt: Português
-      default_language: pt
-      no_translation:
-        en: "This page isn't translated to English."
-        pt: "Esta página não está traduzida para português."
       translate_nav:
         en:
           section title: "Section"
           subsection: "Subsection"
           page title: "Page with title translated"
-          guide: "Guide"
-          introduction: "Introduction"
+          Guia: "Guide"
+          Introdução: "Introduction"
           resources: "Resources"
           middlewares: "Middlewares"
           official-middlewares: "Official Middlewares"
@@ -44,14 +41,13 @@ plugins:
           section title: "Seção"
           subsection: "Subseção"
           page title: "Página com título traduzido"
-          guide: "Guia"
-          introduction: "Introdução"
           resources: "Recursos"
           middlewares: "Middlewares"
           official-middlewares: "Middlewares Oficiais"
 
 markdown_extensions:
   - abbr
+  - attr_list
   - pymdownx.snippets
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -88,14 +84,14 @@ nav:
   # - pt: /pt/
   - index.md
   - index.en.md
-  - introduction:
+  - Introdução:
       - installation.md
       - installation.en.md
       - hello-world.md
       - hello-world.en.md
       - basic-routing.md
       - basic-routing.en.md
-  - guide:
+  - Guia:
       - "routing.md"
   - resources:
       - middlewares:

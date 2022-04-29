@@ -104,3 +104,7 @@ nav:
               - "middlewares/jhonson.md"
               - "middlewares/basic-auth.md"
               - "middlewares/horse-cors.md"
+              - "middlewares/octet-stream.md"
+              - "middlewares/horse-jwt.md"
+              - "middlewares/handle-exception.md"
+              - "middlewares/horse-compression.md"

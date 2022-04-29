@@ -71,7 +71,7 @@ Ou, se você preferir instalar manualmente, basta adicionar as pastas em seu pro
       cthreads,
       {$ENDIF}{$ENDIF}
       Horse,
-      Horse.Jhonson, // It's necessary to use the unit
+      Horse.Jhonson, // Está unit é necessária
       fpjson,
       SysUtils;
 

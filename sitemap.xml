@@ -25,6 +25,14 @@
          
     </url>
     <url>
+         <loc>guidelines/</loc>
+         <lastmod>2022-05-06</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/guidelines/"/>
+         <xhtml:link rel="alternate" hreflang="pt" href="pt/guidelines/"/>
+         
+    </url>
+    <url>
          <loc>hello-world/</loc>
          <lastmod>2022-05-06</lastmod>
          <changefreq>daily</changefreq>

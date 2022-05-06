@@ -68,14 +68,26 @@ Create diagrams with https://mermaid-js.github.io/mermaid/ [link]
 Use advanced features of mk-docs [link]  
 See more. [link]
 
-## Let starting
+## Issue guidelines
+
+Anyone and everyone is welcome to contribute. Please take a moment to review the guidelines for contributing.
+
+This file CONTRIBUTING.md provides a generic set of guidelines for developers to adapt and include in their own GitHub repositories, thereby taking advantage of GitHub's integration with contributing guidelines.
+
+The section below can be included in your README to improve the visibility of your contribution guidelines.
+
+If you think this guide can be improved, please let me know.
+
+🐞 Bug reports
+💡 Feature requests
+🚀 Pull requests
 
 Fork this project on https://github.com/HashLoad/horse-doc
 Give your contrubution and create a Pull Request for `HashLoad/horse-doc`
 
 ## Todo list
 
-[ ] Write the [Conduct Guide]  
+[x] Checkout the [Guidelines](https://github.com/samuelcolvin/pydantic/edit/master/docs/contributing.md) 
 [ ] Write tutorials how to create documentation  
 [ ] a) Create diagrams with https://mermaid-js.github.io/mermaid/ [link]  
 [ ] b) Use advanced features of mk-docs [link]  

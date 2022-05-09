@@ -87,7 +87,7 @@ Give your contrubution and create a Pull Request for `HashLoad/horse-doc`
 
 ## Todo list
 
-[x] Checkout the [Guidelines](https://github.com/samuelcolvin/pydantic/edit/master/docs/contributing.md) 
+[x] Checkout the [Guidelines](https://github.com/HashLoad/horse-doc/blob/master/docs/guidelines.md) 
 [ ] Write tutorials how to create documentation  
 [ ] a) Create diagrams with https://mermaid-js.github.io/mermaid/ [link]  
 [ ] b) Use advanced features of mk-docs [link]  

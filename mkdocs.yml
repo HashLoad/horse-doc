@@ -41,8 +41,8 @@ plugins:
           section title: "Seção"
           subsection: "Subseção"
           page title: "Página com título traduzido"
-      
-markdown_extensions:  
+
+markdown_extensions:
   - abbr
   - attr_list
   - pymdownx.snippets
@@ -96,4 +96,9 @@ nav:
               - "middlewares/octet-stream.md"
               - "middlewares/horse-jwt.md"
               - "middlewares/handle-exception.md"
+              - Horse Logger:
+                  - "middlewares/horse-logger/how-to-use.md"
+                  - Provedores:
+                      - "middlewares/horse-logger/providers/console.md"
+                      - "middlewares/horse-logger/providers/file.md"
               - "middlewares/horse-compression.md"

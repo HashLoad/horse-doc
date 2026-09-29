@@ -10,8 +10,22 @@
       
       
       
+      
+        <link rel="prev" href="../installation/">
+      
+      
+        <link rel="next" href="../basic-routing/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="pt">
+        
+          <link rel="alternate" href="../en/hello-world/" hreflang="en">
+        
+      
+      
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -19,17 +33,17 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
-        
-          
-          
-          <meta name="theme-color" content="#ff6e42">
-        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
+      
+
+
     
+    
+      
     
     
       
@@ -41,7 +55,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -55,9 +69,8 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-orange" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo">
   
-    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -77,16 +90,19 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
     <a href=".." title="Horse" class="md-header__button md-logo" aria-label="Horse" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 6v3.5l-1.5.5-1.54-2.46c-.13-.21-.46-.12-.46.13v3.58c0 .98-.39 1.86-1 2.53V21H15v-6h-.25c-.21 0-.42-.03-.62-.06l-4.44-.74-1.12 2.01.96 4.79H7l-1-4.75c-.03-.3 0-.6.16-.86l1.02-1.81a3.272 3.272 0 0 1-1.68-2.77c-.04.15-.06.37-.03.69.03.44.14 1.09.07 1.81-.04.72-.37 1.46-.79 1.95-.43.49-.9.83-1.4 1.09l-.7-.7c.19-.47.38-.89.42-1.28.06-.37-.01-.67-.12-.94l-.53-1.13c-.21-.51-.47-1.25-.42-2.12.03-.85.5-1.96 1.39-2.57.9-.61 1.87-.69 2.66-.53.5.1 1.01.34 1.45.68.37-.17.8-.26 1.25-.26h5.75V7c0-2.21 1.79-4 4-4H22l-.89 1.34c.54.36.89.97.89 1.66z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 6v3.5l-1.5.5-1.54-2.46c-.13-.21-.46-.12-.46.13v3.58c0 .98-.39 1.86-1 2.53V21H15v-6h-.25c-.21 0-.42-.03-.62-.06l-4.44-.74-1.12 2.01.96 4.79H7l-1-4.75c-.03-.3 0-.6.16-.86l1.02-1.81a3.27 3.27 0 0 1-1.68-2.77c-.04.15-.06.37-.03.69.03.44.14 1.09.07 1.81-.04.72-.37 1.46-.79 1.95-.43.49-.9.83-1.4 1.09l-.7-.7c.19-.47.38-.89.42-1.28.06-.37-.01-.67-.12-.94l-.53-1.13c-.21-.51-.47-1.25-.42-2.12.03-.85.5-1.96 1.39-2.57.9-.61 1.87-.69 2.66-.53.5.1 1.01.34 1.45.68.37-.17.8-.26 1.25-.26h5.75V7c0-2.21 1.79-4 4-4H22l-.89 1.34c.54.36.89.97.89 1.66"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -105,73 +121,83 @@
       </div>
     </div>
     
+      
+    
+    
     
       <div class="md-header__option">
-        <div class="md-select">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Selecione o idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="pt" class="md-select__link">
+              Português
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../en/hello-world/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
           
-          <button class="md-header__button md-icon" aria-label="Selecione o idioma">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
-          </button>
-          <div class="md-select__inner">
-            <ul class="md-select__list">
-              
-                <li class="md-select__item">
-                  <a href="../en/hello-world/" hreflang="en" class="md-select__link">
-                    English
-                  </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="./" hreflang="pt" class="md-select__link">
-                    Português
-                  </a>
-                </li>
-                
-            </ul>
-          </div>
-        </div>
-      </div>
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Pesquisar">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Limpar" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Inicializando a pesquisa
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://github.com/HashLoad/horse" title="Ir ao repositório" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -201,12 +227,13 @@
                     
 
 
+
 <nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="Horse" class="md-nav__button md-logo" aria-label="Horse" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 6v3.5l-1.5.5-1.54-2.46c-.13-.21-.46-.12-.46.13v3.58c0 .98-.39 1.86-1 2.53V21H15v-6h-.25c-.21 0-.42-.03-.62-.06l-4.44-.74-1.12 2.01.96 4.79H7l-1-4.75c-.03-.3 0-.6.16-.86l1.02-1.81a3.272 3.272 0 0 1-1.68-2.77c-.04.15-.06.37-.03.69.03.44.14 1.09.07 1.81-.04.72-.37 1.46-.79 1.95-.43.49-.9.83-1.4 1.09l-.7-.7c.19-.47.38-.89.42-1.28.06-.37-.01-.67-.12-.94l-.53-1.13c-.21-.51-.47-1.25-.42-2.12.03-.85.5-1.96 1.39-2.57.9-.61 1.87-.69 2.66-.53.5.1 1.01.34 1.45.68.37-.17.8-.26 1.25-.26h5.75V7c0-2.21 1.79-4 4-4H22l-.89 1.34c.54.36.89.97.89 1.66z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 6v3.5l-1.5.5-1.54-2.46c-.13-.21-.46-.12-.46.13v3.58c0 .98-.39 1.86-1 2.53V21H15v-6h-.25c-.21 0-.42-.03-.62-.06l-4.44-.74-1.12 2.01.96 4.79H7l-1-4.75c-.03-.3 0-.6.16-.86l1.02-1.81a3.27 3.27 0 0 1-1.68-2.77c-.04.15-.06.37-.03.69.03.44.14 1.09.07 1.81-.04.72-.37 1.46-.79 1.95-.43.49-.9.83-1.4 1.09l-.7-.7c.19-.47.38-.89.42-1.28.06-.37-.01-.67-.12-.94l-.53-1.13c-.21-.51-.47-1.25-.42-2.12.03-.85.5-1.96 1.39-2.57.9-.61 1.87-.69 2.66-.53.5.1 1.01.34 1.45.68.37-.17.8-.26 1.25-.26h5.75V7c0-2.21 1.79-4 4-4H22l-.89 1.34c.54.36.89.97.89 1.66"/></svg>
 
     </a>
     Horse
@@ -216,7 +243,7 @@
       <a href="https://github.com/HashLoad/horse" title="Ir ao repositório" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -228,14 +255,26 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        Bem vindo
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bem vindo
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
@@ -243,70 +282,130 @@
     
       
       
-      
-
   
   
     
   
   
+  
+    
+    
+    
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2">
-          Introdução
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Introdução" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          Introdução
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
           
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introdução
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Introdução
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../installation/" class="md-nav__link">
-        Instalação
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instalação
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
     
   
   
+  
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Olá mundo!
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Olá mundo!
+  
+
+    
+  </span>
+  
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Olá mundo!
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Olá mundo!
+  
+
+    
+  </span>
+  
+  
+
       </a>
       
         
@@ -326,7 +425,11 @@
       
         <li class="md-nav__item">
   <a href="#simplificando" class="md-nav__link">
-    Simplificando
+    <span class="md-ellipsis">
+      
+        Simplificando
+      
+    </span>
   </a>
   
 </li>
@@ -338,392 +441,786 @@
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../basic-routing/" class="md-nav__link">
-        Roteamento Básico
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roteamento Básico
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     
+    
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          Guia
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Guia" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Guia
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
           
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../routing/" class="md-nav__link">
-        Roteamento
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roteamento
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
       
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos
+  
 
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Recursos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
   
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
-          Recursos
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Recursos" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Recursos
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
+    
+    
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4_1">
-          Middlewares
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Middlewares" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_1">
-          <span class="md-nav__icon md-icon"></span>
-          Middlewares
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
           
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Middlewares
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Middlewares
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../middlewares/middlewares/" class="md-nav__link">
-        Middlewares no Horse
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Middlewares no Horse
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     
+    
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1_2" type="checkbox" id="__nav_4_1_2" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4_1_2">
-          Middlewares Oficiais
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Middlewares Oficiais" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_1_2">
-          <span class="md-nav__icon md-icon"></span>
-          Middlewares Oficiais
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2" >
+        
           
+          <label class="md-nav__link" for="__nav_4_1_2" id="__nav_4_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Middlewares Oficiais
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Middlewares Oficiais
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../middlewares/jhonson/" class="md-nav__link">
-        Jhonson
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jhonson
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../middlewares/basic-auth/" class="md-nav__link">
-        Basic Auth
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Auth
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../middlewares/horse-cors/" class="md-nav__link">
-        Horse CORS
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Horse CORS
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../middlewares/octet-stream/" class="md-nav__link">
-        Octet Stream
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Octet Stream
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../middlewares/horse-jwt/" class="md-nav__link">
-        Horse JWT
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Horse JWT
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../middlewares/handle-exception/" class="md-nav__link">
-        Handle Exception
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Handle Exception
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     
+    
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1_2_7" type="checkbox" id="__nav_4_1_2_7" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4_1_2_7">
-          Horse Logger
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Horse Logger" data-md-level="4">
-        <label class="md-nav__title" for="__nav_4_1_2_7">
-          <span class="md-nav__icon md-icon"></span>
-          Horse Logger
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2_7" >
+        
           
+          <label class="md-nav__link" for="__nav_4_1_2_7" id="__nav_4_1_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Horse Logger
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Horse Logger
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../middlewares/horse-logger/how-to-use/" class="md-nav__link">
-        Como Usar?
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Como Usar?
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     
+    
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1_2_7_2" type="checkbox" id="__nav_4_1_2_7_2" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4_1_2_7_2">
-          Provedores
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Provedores" data-md-level="5">
-        <label class="md-nav__title" for="__nav_4_1_2_7_2">
-          <span class="md-nav__icon md-icon"></span>
-          Provedores
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2_7_2" >
+        
           
+          <label class="md-nav__link" for="__nav_4_1_2_7_2" id="__nav_4_1_2_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Provedores
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_2_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_2_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Provedores
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../middlewares/horse-logger/providers/console/" class="md-nav__link">
-        Console
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Console
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../middlewares/horse-logger/providers/file/" class="md-nav__link">
-        Arquivo
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquivo
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../middlewares/horse-compression/" class="md-nav__link">
-        Horse Compression
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Horse Compression
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
+              
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3" >
+        
           
-        </ul>
-      </nav>
+          <label class="md-nav__link" for="__nav_4_1_3" id="__nav_4_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Middlewares da Comunidade
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Middlewares da Comunidade
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../middlewares/swagdoc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SwagDoc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -756,7 +1253,11 @@
       
         <li class="md-nav__item">
   <a href="#simplificando" class="md-nav__link">
-    Simplificando
+    <span class="md-ellipsis">
+      
+        Simplificando
+      
+    </span>
   </a>
   
 </li>
@@ -769,10 +1270,13 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
+          
+            <div class="md-content" data-md-component="content">
               
+              <article class="md-content__inner md-typeset">
                 
+                  
+
 
 
 <h1 id="ola-mundo">Olá mundo!</h1>
@@ -781,25 +1285,25 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Delphi</label><label for="__tabbed_1_2">Lazarus</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="k">uses</span> 
-  <span class="n">System</span><span class="o">.</span><span class="n">SysUtils</span><span class="o">,</span> 
-  <span class="n">Horse</span><span class="o">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">uses</span><span class="w"> </span>
+<span class="w">  </span><span class="n">System</span><span class="o">.</span><span class="n">SysUtils</span><span class="o">,</span><span class="w"> </span>
+<span class="w">  </span><span class="n">Horse</span><span class="o">;</span>
 
 <span class="k">const</span>
-    <span class="n">HORSE_PORT</span> <span class="o">=</span> <span class="mi">9000</span><span class="o">;</span>
+<span class="w">    </span><span class="n">HORSE_PORT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">9000</span><span class="o">;</span>
 
 <span class="k">begin</span>
-  <span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span>
-    <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
-    <span class="k">begin</span>
-      <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Olá, mundo!&#39;</span><span class="p">)</span><span class="o">;</span>
-    <span class="k">end</span><span class="p">)</span><span class="o">;</span>
+<span class="w">  </span><span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">'/'</span><span class="o">,</span>
+<span class="w">    </span><span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span><span class="w"> </span><span class="n">THorseRequest</span><span class="o">;</span><span class="w"> </span><span class="n">Res</span><span class="o">:</span><span class="w"> </span><span class="n">THorseResponse</span><span class="o">;</span><span class="w"> </span><span class="n">Next</span><span class="o">:</span><span class="w"> </span><span class="n">TProc</span><span class="p">)</span>
+<span class="w">    </span><span class="k">begin</span>
+<span class="w">      </span><span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">'Olá, mundo!'</span><span class="p">)</span><span class="o">;</span>
+<span class="w">    </span><span class="k">end</span><span class="p">)</span><span class="o">;</span>
 
-  <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="p">(</span><span class="n">HORSE_PORT</span><span class="o">,</span>
-    <span class="k">procedure</span><span class="p">(</span><span class="n">Horse</span><span class="o">:</span> <span class="n">THorse</span><span class="p">)</span>
-    <span class="k">begin</span>
-      <span class="nb">Writeln</span><span class="p">(</span><span class="nb">Format</span><span class="p">(</span><span class="s">&#39;O servidor está rodando em %s:%d&#39;</span><span class="o">,</span> <span class="p">[</span><span class="n">Horse</span><span class="o">.</span><span class="n">Host</span><span class="o">,</span> <span class="n">Horse</span><span class="o">.</span><span class="n">Port</span><span class="p">]))</span><span class="o">;</span>
-    <span class="k">end</span><span class="p">)</span><span class="o">;</span>
+<span class="w">  </span><span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="p">(</span><span class="n">HORSE_PORT</span><span class="o">,</span>
+<span class="w">    </span><span class="k">procedure</span><span class="p">(</span><span class="n">Horse</span><span class="o">:</span><span class="w"> </span><span class="n">THorse</span><span class="p">)</span>
+<span class="w">    </span><span class="k">begin</span>
+<span class="w">      </span><span class="nb">Writeln</span><span class="p">(</span><span class="nb">Format</span><span class="p">(</span><span class="s">'O servidor está rodando em %s:%d'</span><span class="o">,</span><span class="w"> </span><span class="p">[</span><span class="n">Horse</span><span class="o">.</span><span class="n">Host</span><span class="o">,</span><span class="w"> </span><span class="n">Horse</span><span class="o">.</span><span class="n">Port</span><span class="p">]))</span><span class="o">;</span>
+<span class="w">    </span><span class="k">end</span><span class="p">)</span><span class="o">;</span>
 <span class="k">end</span><span class="o">.</span>
 </code></pre></div>
 </div>
@@ -807,26 +1311,26 @@
 <div class="highlight"><pre><span></span><code><span class="cm">{$MODE DELPHI}{$H+}</span>
 
 <span class="k">uses</span>
-  <span class="n">SysUtils</span><span class="o">,</span>
-  <span class="n">Horse</span><span class="o">;</span>
+<span class="w">  </span><span class="n">SysUtils</span><span class="o">,</span>
+<span class="w">  </span><span class="n">Horse</span><span class="o">;</span>
 
 <span class="k">const</span>
-  <span class="n">HORSE_PORT</span> <span class="o">=</span> <span class="mi">9000</span><span class="o">;</span>
+<span class="w">  </span><span class="n">HORSE_PORT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">9000</span><span class="o">;</span>
 
-<span class="k">procedure</span> <span class="nf">GetHelloWorld</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TNextProc</span><span class="p">)</span><span class="o">;</span>
+<span class="k">procedure</span><span class="w"> </span><span class="nf">GetHelloWorld</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span><span class="w"> </span><span class="n">THorseRequest</span><span class="o">;</span><span class="w"> </span><span class="n">Res</span><span class="o">:</span><span class="w"> </span><span class="n">THorseResponse</span><span class="o">;</span><span class="w"> </span><span class="n">Next</span><span class="o">:</span><span class="w"> </span><span class="n">TNextProc</span><span class="p">)</span><span class="o">;</span>
 <span class="k">begin</span>
-  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Ola Mundo!&#39;</span><span class="p">)</span><span class="o">;</span>
+<span class="w">  </span><span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">'Ola Mundo!'</span><span class="p">)</span><span class="o">;</span>
 <span class="k">end</span><span class="o">;</span>
 
-<span class="k">procedure</span> <span class="nf">HorseListenCallback</span><span class="p">(</span><span class="n">Horse</span><span class="o">:</span> <span class="n">THorse</span><span class="p">)</span><span class="o">;</span>
+<span class="k">procedure</span><span class="w"> </span><span class="nf">HorseListenCallback</span><span class="p">(</span><span class="n">Horse</span><span class="o">:</span><span class="w"> </span><span class="n">THorse</span><span class="p">)</span><span class="o">;</span>
 <span class="k">begin</span>
-  <span class="nb">Writeln</span><span class="p">(</span><span class="nb">Format</span><span class="p">(</span><span class="s">&#39;O servidor esta rodando em %s:%d&#39;</span><span class="o">,</span> <span class="p">[</span><span class="n">Horse</span><span class="o">.</span><span class="n">Host</span><span class="o">,</span> <span class="n">Horse</span><span class="o">.</span><span class="n">Port</span><span class="p">]))</span><span class="o">;</span>
+<span class="w">  </span><span class="nb">Writeln</span><span class="p">(</span><span class="nb">Format</span><span class="p">(</span><span class="s">'O servidor esta rodando em %s:%d'</span><span class="o">,</span><span class="w"> </span><span class="p">[</span><span class="n">Horse</span><span class="o">.</span><span class="n">Host</span><span class="o">,</span><span class="w"> </span><span class="n">Horse</span><span class="o">.</span><span class="n">Port</span><span class="p">]))</span><span class="o">;</span>
 <span class="k">end</span><span class="o">;</span>
 
 <span class="k">begin</span>
-  <span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span> <span class="n">GetHelloWorld</span><span class="p">)</span><span class="o">;</span>
-  <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="p">(</span><span class="n">HORSE_PORT</span><span class="o">,</span> <span class="n">HorseListenCallback</span><span class="p">)</span><span class="o">;</span>
-<span class="k">end</span><span class="o">.</span> 
+<span class="w">  </span><span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">'/'</span><span class="o">,</span><span class="w"> </span><span class="n">GetHelloWorld</span><span class="p">)</span><span class="o">;</span>
+<span class="w">  </span><span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="p">(</span><span class="n">HORSE_PORT</span><span class="o">,</span><span class="w"> </span><span class="n">HorseListenCallback</span><span class="p">)</span><span class="o">;</span>
+<span class="k">end</span><span class="o">.</span><span class="w"> </span>
 </code></pre></div>
 </div>
 </div>
@@ -840,82 +1344,64 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Delphi</label><label for="__tabbed_2_2">Lazarus</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="k">uses</span> <span class="n">Horse</span><span class="o">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">uses</span><span class="w"> </span><span class="n">Horse</span><span class="o">;</span>
 
 <span class="k">begin</span>
-  <span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span>
-    <span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TProc</span><span class="p">)</span>
-    <span class="k">begin</span>
-      <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Olá, mundo!&#39;</span><span class="p">)</span><span class="o">;</span>
-    <span class="k">end</span><span class="p">)</span><span class="o">;</span>
+<span class="w">  </span><span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">'/'</span><span class="o">,</span>
+<span class="w">    </span><span class="k">procedure</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span><span class="w"> </span><span class="n">THorseRequest</span><span class="o">;</span><span class="w"> </span><span class="n">Res</span><span class="o">:</span><span class="w"> </span><span class="n">THorseResponse</span><span class="o">;</span><span class="w"> </span><span class="n">Next</span><span class="o">:</span><span class="w"> </span><span class="n">TProc</span><span class="p">)</span>
+<span class="w">    </span><span class="k">begin</span>
+<span class="w">      </span><span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">'Olá, mundo!'</span><span class="p">)</span><span class="o">;</span>
+<span class="w">    </span><span class="k">end</span><span class="p">)</span><span class="o">;</span>
 
-  <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="o">;</span>
+<span class="w">  </span><span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="o">;</span>
 <span class="k">end</span><span class="o">.</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="cm">{$MODE DELPHI}{$H+}</span>
 
-<span class="k">uses</span> <span class="n">Horse</span><span class="o">;</span>
+<span class="k">uses</span><span class="w"> </span><span class="n">Horse</span><span class="o">;</span>
 
-<span class="k">procedure</span> <span class="nf">GetHelloWorld</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span> <span class="n">THorseRequest</span><span class="o">;</span> <span class="n">Res</span><span class="o">:</span> <span class="n">THorseResponse</span><span class="o">;</span> <span class="n">Next</span><span class="o">:</span> <span class="n">TNextProc</span><span class="p">)</span><span class="o">;</span>
+<span class="k">procedure</span><span class="w"> </span><span class="nf">GetHelloWorld</span><span class="p">(</span><span class="n">Req</span><span class="o">:</span><span class="w"> </span><span class="n">THorseRequest</span><span class="o">;</span><span class="w"> </span><span class="n">Res</span><span class="o">:</span><span class="w"> </span><span class="n">THorseResponse</span><span class="o">;</span><span class="w"> </span><span class="n">Next</span><span class="o">:</span><span class="w"> </span><span class="n">TNextProc</span><span class="p">)</span><span class="o">;</span>
 <span class="k">begin</span>
-  <span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">&#39;Ola Mundo!&#39;</span><span class="p">)</span><span class="o">;</span>
+<span class="w">  </span><span class="n">Res</span><span class="o">.</span><span class="n">Send</span><span class="p">(</span><span class="s">'Ola Mundo!'</span><span class="p">)</span><span class="o">;</span>
 <span class="k">end</span><span class="o">;</span>
 
 <span class="k">begin</span>
-  <span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="o">,</span> <span class="n">GetHelloWorld</span><span class="p">)</span><span class="o">;</span>
-  <span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="o">;</span>
-<span class="k">end</span><span class="o">.</span> 
+<span class="w">  </span><span class="n">THorse</span><span class="o">.</span><span class="n">Get</span><span class="p">(</span><span class="s">'/'</span><span class="o">,</span><span class="w"> </span><span class="n">GetHelloWorld</span><span class="p">)</span><span class="o">;</span>
+<span class="w">  </span><span class="n">THorse</span><span class="o">.</span><span class="n">Listen</span><span class="o">;</span>
+<span class="k">end</span><span class="o">.</span><span class="w"> </span>
 </code></pre></div>
 </div>
 </div>
 </div>
 <p>Pronto! Agora você está hápto para trabalhar com o Horse...</p>
 
-              
-            </article>
-          </div>
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Rodapé">
-      
-        
-        <a href="../installation/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Instalação" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Anterior
-              </span>
-              Instalação
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../basic-routing/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Roteamento Básico" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Próximo
-              </span>
-              Roteamento Básico
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -929,33 +1415,40 @@
   
 </div>
       
-        <div class="md-social">
+        
+<div class="md-social">
   
+    
+    
     
     
       
       
     
     <a href="https://t.me/hashload" target="_blank" rel="noopener" title="t.me" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M248 8C111.033 8 0 119.033 0 256s111.033 248 248 248 248-111.033 248-248S384.967 8 248 8zm114.952 168.66c-3.732 39.215-19.881 134.378-28.1 178.3-3.476 18.584-10.322 24.816-16.948 25.425-14.4 1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25 5.342-39.5 3.652-3.793 67.107-61.51 68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608 69.142-14.845 10.194-26.894 9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7 18.45-13.7 108.446-47.248 144.628-62.3c68.872-28.647 83.183-33.623 92.511-33.789 2.052-.034 6.639.474 9.61 2.885a10.452 10.452 0 0 1 3.53 6.716 43.765 43.765 0 0 1 .417 9.769z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496m115 168.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7.2-.7.3-3.1-1.2-4.4s-3.6-.8-5.1-.5c-2.2.5-37.1 23.5-104.6 69.1-9.9 6.8-18.9 10.1-26.9 9.9-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3.6-4.5 6.7-9 18.4-13.7 72.3-31.5 120.5-52.3 144.6-62.3 68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6.5 9.6 2.9 2 1.7 3.2 4.1 3.5 6.7.5 3.2.6 6.5.4 9.8z"/></svg>
     </a>
   
+    
+    
     
     
       
       
     
     <a href="https://www.youtube.com/channel/UCl4IApn7H4mZ1V-nmNijL6A" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
     </a>
   
+    
+    
     
     
       
       
     
     <a href="https://discord.gg/VBBPhv6m" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541zM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
     </a>
   
 </div>
@@ -968,10 +1461,15 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "search.seggest", "search.highlight", "contents.tabs.link"], "search": "../assets/javascripts/workers/search.bd0b6b67.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version.title": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.467223ff.min.js"></script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["header.autohide", "search.seggest", "search.highlight", "contents.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

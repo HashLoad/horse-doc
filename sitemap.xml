@@ -1,155 +1,283 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>.</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/"/>
-         
+        <loc>None./</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="None"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
     </url>
     <url>
-         <loc>%23%20Diagramas/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/%23%20Diagramas/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/%23%20Diagramas/"/>
-         
+        <loc>None%23%20Diagramas/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="None%23%20Diagramas/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/%23%20Diagramas/"/>
     </url>
     <url>
-         <loc>basic-routing/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/basic-routing/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/basic-routing/"/>
-         
+        <loc>Nonebasic-routing/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonebasic-routing/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/basic-routing/"/>
     </url>
     <url>
-         <loc>guidelines/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/guidelines/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/guidelines/"/>
-         
+        <loc>Noneguidelines/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Noneguidelines/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/guidelines/"/>
     </url>
     <url>
-         <loc>hello-world/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/hello-world/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/hello-world/"/>
-         
+        <loc>Nonehello-world/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonehello-world/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/hello-world/"/>
     </url>
     <url>
-         <loc>installation/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/installation/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/installation/"/>
-         
+        <loc>Noneinstallation/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Noneinstallation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/installation/"/>
     </url>
     <url>
-         <loc>missing-translations/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/missing-translations/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/missing-translations/"/>
-         
+        <loc>Nonemissing-translations/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemissing-translations/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/missing-translations/"/>
     </url>
     <url>
-         <loc>routing/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/routing/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/routing/"/>
-         
+        <loc>Nonerouting/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonerouting/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/routing/"/>
     </url>
     <url>
-         <loc>middlewares/basic-auth/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/basic-auth/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/basic-auth/"/>
-         
+        <loc>Nonemiddlewares/basic-auth/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/basic-auth/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/basic-auth/"/>
     </url>
     <url>
-         <loc>middlewares/handle-exception/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/handle-exception/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/handle-exception/"/>
-         
+        <loc>Nonemiddlewares/handle-exception/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/handle-exception/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/handle-exception/"/>
     </url>
     <url>
-         <loc>middlewares/horse-compression/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/horse-compression/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/horse-compression/"/>
-         
+        <loc>Nonemiddlewares/horse-compression/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/horse-compression/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/horse-compression/"/>
     </url>
     <url>
-         <loc>middlewares/horse-cors/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/horse-cors/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/horse-cors/"/>
-         
+        <loc>Nonemiddlewares/horse-cors/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/horse-cors/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/horse-cors/"/>
     </url>
     <url>
-         <loc>middlewares/horse-jwt/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/horse-jwt/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/horse-jwt/"/>
-         
+        <loc>Nonemiddlewares/horse-jwt/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/horse-jwt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/horse-jwt/"/>
     </url>
     <url>
-         <loc>middlewares/jhonson/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/jhonson/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/jhonson/"/>
-         
+        <loc>Nonemiddlewares/jhonson/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/jhonson/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/jhonson/"/>
     </url>
     <url>
-         <loc>middlewares/middlewares/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/middlewares/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/middlewares/"/>
-         
+        <loc>Nonemiddlewares/middlewares/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/middlewares/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/middlewares/"/>
     </url>
     <url>
-         <loc>middlewares/octet-stream/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/octet-stream/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/octet-stream/"/>
-         
+        <loc>Nonemiddlewares/octet-stream/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/octet-stream/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/octet-stream/"/>
     </url>
     <url>
-         <loc>middlewares/horse-logger/how-to-use/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/horse-logger/how-to-use/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/horse-logger/how-to-use/"/>
-         
+        <loc>Nonemiddlewares/swagdoc/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/swagdoc/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/swagdoc/"/>
     </url>
     <url>
-         <loc>middlewares/horse-logger/providers/console/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/horse-logger/providers/console/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/horse-logger/providers/console/"/>
-         
+        <loc>Nonemiddlewares/horse-logger/how-to-use/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/horse-logger/how-to-use/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/horse-logger/how-to-use/"/>
     </url>
     <url>
-         <loc>middlewares/horse-logger/providers/file/</loc>
-         <lastmod>2022-05-11</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="en/middlewares/horse-logger/providers/file/"/>
-         <xhtml:link rel="alternate" hreflang="pt" href="pt/middlewares/horse-logger/providers/file/"/>
-         
+        <loc>Nonemiddlewares/horse-logger/providers/console/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/horse-logger/providers/console/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/horse-logger/providers/console/"/>
+    </url>
+    <url>
+        <loc>Nonemiddlewares/horse-logger/providers/file/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/horse-logger/providers/file/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/horse-logger/providers/file/"/>
+    </url>
+    <url>
+        <loc>Noneen/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="None"/>
+    </url>
+    <url>
+        <loc>Noneen/%23%20Diagramas/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/%23%20Diagramas/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="None%23%20Diagramas/"/>
+    </url>
+    <url>
+        <loc>Noneen/basic-routing/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/basic-routing/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonebasic-routing/"/>
+    </url>
+    <url>
+        <loc>Noneen/guidelines/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/guidelines/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Noneguidelines/"/>
+    </url>
+    <url>
+        <loc>Noneen/hello-world/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/hello-world/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonehello-world/"/>
+    </url>
+    <url>
+        <loc>Noneen/installation/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/installation/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Noneinstallation/"/>
+    </url>
+    <url>
+        <loc>Noneen/missing-translations/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/missing-translations/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemissing-translations/"/>
+    </url>
+    <url>
+        <loc>Noneen/routing/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/routing/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonerouting/"/>
+    </url>
+    <url>
+        <loc>Noneen/middlewares/basic-auth/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/basic-auth/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/basic-auth/"/>
+    </url>
+    <url>
+        <loc>Noneen/middlewares/handle-exception/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/handle-exception/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/handle-exception/"/>
+    </url>
+    <url>
+        <loc>Noneen/middlewares/horse-compression/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/horse-compression/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/horse-compression/"/>
+    </url>
+    <url>
+        <loc>Noneen/middlewares/horse-cors/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/horse-cors/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/horse-cors/"/>
+    </url>
+    <url>
+        <loc>Noneen/middlewares/horse-jwt/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/horse-jwt/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/horse-jwt/"/>
+    </url>
+    <url>
+        <loc>Noneen/middlewares/jhonson/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/jhonson/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/jhonson/"/>
+    </url>
+    <url>
+        <loc>Noneen/middlewares/middlewares/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/middlewares/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/middlewares/"/>
+    </url>
+    <url>
+        <loc>Noneen/middlewares/octet-stream/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/octet-stream/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/octet-stream/"/>
+    </url>
+    <url>
+        <loc>Noneen/middlewares/swagdoc/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/swagdoc/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/swagdoc/"/>
+    </url>
+    <url>
+        <loc>Noneen/middlewares/horse-logger/how-to-use/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/horse-logger/how-to-use/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/horse-logger/how-to-use/"/>
+    </url>
+    <url>
+        <loc>Noneen/middlewares/horse-logger/providers/console/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/horse-logger/providers/console/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/horse-logger/providers/console/"/>
+    </url>
+    <url>
+        <loc>Noneen/middlewares/horse-logger/providers/file/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/middlewares/horse-logger/providers/file/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonemiddlewares/horse-logger/providers/file/"/>
     </url>
 </urlset>

@@ -102,3 +102,5 @@ nav:
                       - "middlewares/horse-logger/providers/console.md"
                       - "middlewares/horse-logger/providers/file.md"
               - "middlewares/horse-compression.md"
+          - Middlewares da Comunidade:
+              - "middlewares/swagdoc.md"

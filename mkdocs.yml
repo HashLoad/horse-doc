@@ -23,24 +23,30 @@ theme:
 plugins:
   - search
   - i18n:
-      default_language: pt
+      docs_structure: suffix
       languages:
-        en: English
-        pt: Português
-      nav_translations:
-        en:
-          section title: "Section"
-          subsection: "Subsection"
-          page title: "Page with title translated"
-          Guia: "Guide"
-          Introdução: "Introduction"
-          Recursos: "Resources"
-          Middlewares Oficiais: "Official Middlewares"
-          Middlewares no Horse: "Middlewares in Horse"
-        pt:
-          section title: "Seção"
-          subsection: "Subseção"
-          page title: "Página com título traduzido"
+        - locale: pt
+          name: Português
+          default: true
+          build: true
+          nav_translations:
+            section title: "Seção"
+            subsection: "Subseção"
+            page title: "Página com título traduzido"
+        - locale: en
+          name: English
+          build: true
+          nav_translations:
+            section title: "Section"
+            subsection: "Subsection"
+            page title: "Page with title translated"
+            Guia: "Guide"
+            Introdução: "Introduction"
+            Recursos: "Resources"
+            Middlewares Oficiais: "Official Middlewares"
+            Middlewares da Comunidade: "Community Middlewares"
+            Middlewares no Horse: "Middlewares in Horse"
+            Provedores: "Providers"
 
 markdown_extensions:
   - abbr
@@ -60,13 +66,6 @@ markdown_extensions:
   - footnotes
 
 extra:
-  alternate:
-    - link: ./en/
-      name: English
-      lang: en
-    - link: ./
-      name: Português
-      lang: pt
   social:
     - icon: fontawesome/brands/telegram
       link: https://t.me/hashload
